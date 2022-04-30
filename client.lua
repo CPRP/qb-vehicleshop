@@ -172,10 +172,10 @@ local function createVehZones(shopName, entity)
                 Config.Shops[shopName]['Zone']['size'],
             {
                 name = "box_zone_"..shopName.."_"..i,
-                debugPoly = false,
+                debugPoly = true,
             })
         end
-        local combo = ComboZone:Create(zones, {name = "vehCombo", debugPoly = false})
+        local combo = ComboZone:Create(zones, {name = "vehCombo", debugPoly = true})
         combo:onPlayerInOut(function(isPointInside)
             local insideShop = getShopInsideOf()
             if isPointInside then
@@ -211,7 +211,8 @@ function createFreeUseShop(shopShape, name)
     local zone = PolyZone:Create(shopShape, {  -- create the zone
         name= name,
         minZ = shopShape.minZ,
-        maxZ = shopShape.maxZ
+        maxZ = shopShape.maxZ,
+	debugPoly = true
     })
 
     zone:onPlayerInOut(function(isPointInside)
@@ -731,7 +732,7 @@ CreateThread(function()
         name = "vehicleshop_financeZone",
         offset = {0.0, 0.0, 0.0},
         scale = {1.0, 1.0, 1.0},
-        debugPoly = false,
+        debugPoly = true,
     })
 
     financeZone:onPlayerInOut(function(isPointInside)
