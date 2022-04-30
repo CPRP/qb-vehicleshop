@@ -154,7 +154,223 @@ Config.Shops = {
                 chosenVehicle = 'hexer',
             },
         }
-    }, -- Add your next table under this comma
+    },
+    ['LSPDVS'] = {
+        ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
+        ['Zone'] = {
+            ['Shape'] = { --polygon that surrounds the shop
+                vector2(423.09365844727, -973.00476074219),
+                vector2(423.15286254883, -1000.2853393555),
+                vector2(424.45986938477, -1000.2731933594),
+                vector2(424.55288696289, -998.75708007812),
+                vector2(426.42709350586, -998.54864501953),
+                vector2(426.63784790039, -1000.2899780273),
+                vector2(440.32766723633, -1000.2852783203),
+                vector2(440.40969848633, -998.76806640625),
+                vector2(442.25427246094, -998.58880615234),
+                vector2(442.52581787109, -1000.2886962891),
+                vector2(450.04904174805, -1000.325012207),
+                vector2(449.75857543945, -972.98345947266),
+                vector2(442.52444458008, -973.03637695312),
+                vector2(442.36883544922, -974.56939697266),
+                vector2(440.66879272461, -974.69232177734),
+                vector2(440.33126831055, -973.03521728516),
+                vector2(426.63757324219, -973.03912353516),
+                vector2(426.5283203125, -974.58276367188),
+                vector2(424.78085327148, -974.78442382812),
+                vector2(424.44320678711, -973.03863525391)
+            },
+            ['minZ'] = 25.7,  -- min height of the shop zone
+            ['maxZ'] = 31.0,  -- max height of the shop zone
+            ['size'] = 3.25, -- size of the vehicles zones
+        },
+        ['Job'] = 'police', -- Name of job or none
+        ['ShopLabel'] = 'LSPD Vehicle Shop', -- Blip name
+        ['showBlip'] = false,  -- true or false
+        ['blipSprite'] = 326,  -- Blip sprite
+        ['blipColor'] = 3,  -- Blip color
+        ['Categories'] = { -- Categories available to browse
+            ['lspd'] = 'Los Santos Police Department',
+        },
+        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        ['Location'] = vector3(437.06, -993.06, 25.7), -- Blip Location
+        ['ReturnLocation'] = vector3(437.43, -994.29, 25.7), -- Location to return vehicle, only enables if the vehicleshop has a job owned
+        ['VehicleSpawn'] = vector4(431.24, -987.03, 25.7, 180.0), -- Spawn location when vehicle is bought
+        ['ShowroomVehicles'] = {
+            [1] = {
+                coords = vector4(437.39, -988.92, 25.7, 90.34), -- where the vehicle will spawn on display
+                defaultVehicle = 'PD35', -- Default display vehicle
+                chosenVehicle = 'PD35', -- Same as default but is dynamically changed when swapping vehicles
+            },
+        },
+    },
+    ['PILLBOXVS'] = {
+        ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
+        ['Zone'] = {
+            ['Shape'] = { --polygon that surrounds the shop
+                vector2(317.38739013672, -562.07629394531),
+                vector2(311.25842285156, -578.89056396484),
+                vector2(311.67098999023, -579.52728271484),
+                vector2(311.58505249023, -580.00805664062),
+                vector2(318.3215637207, -582.45941162109),
+                vector2(316.68591308594, -587.97698974609),
+                vector2(333.85189819336, -594.22119140625),
+                vector2(335.71618652344, -589.68133544922),
+                vector2(337.83508300781, -590.47406005859),
+                vector2(341.99743652344, -578.96179199219),
+                vector2(340.28457641602, -578.25170898438),
+                vector2(343.95080566406, -567.32470703125),
+                vector2(326.50817871094, -560.98291015625),
+                vector2(326.28707885742, -561.27447509766),
+                vector2(322.58203125, -559.62005615234)
+            },
+            ['minZ'] = 28.8,  -- min height of the shop zone
+            ['maxZ'] = 34.0,  -- max height of the shop zone
+            ['size'] = 3.25, -- size of the vehicles zones
+        },
+        ['Job'] = 'ambulance', -- Name of job or none
+        ['ShopLabel'] = 'Pillbox Vehicle Shop', -- Blip name
+        ['showBlip'] = false,  -- true or false
+        ['blipSprite'] = 326,  -- Blip sprite
+        ['blipColor'] = 3,  -- Blip color
+        ['Categories'] = { -- Categories available to browse
+            ['medical'] = 'Pillbox Hospital',
+        },
+        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        ['Location'] = vector3(328.86, -576.66, 28.8), -- Blip Location
+        ['ReturnLocation'] = vector3(322.21, -566.11, 28.8), -- Location to return vehicle, only enables if the vehicleshop has a job owned
+        ['VehicleSpawn'] = vector4(333.0, -575.86, 28.8, 340.91), -- Spawn location when vehicle is bought
+        ['ShowroomVehicles'] = {
+            [1] = {
+                coords = vector4(327.4, -584.57, 28.8, 246.48), -- where the vehicle will spawn on display
+                defaultVehicle = 'FTOFD2', -- Default display vehicle
+                chosenVehicle = 'FTOFD2', -- Same as default but is dynamically changed when swapping vehicles
+            },
+        },
+    },
+    ['LSFDVS'] = {
+        ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
+        ['Zone'] = {
+            ['Shape'] = { --polygon that surrounds the shop
+                vector2(-654.83294677734, -106.79637908936),
+                vector2(-644.15814208984, -100.70204162598),
+                vector2(-640.17602539062, -96.939895629883),
+                vector2(-640.70764160156, -95.743156433105),
+                vector2(-637.91882324219, -93.2255859375),
+                vector2(-632.06658935547, -93.821189880371),
+                vector2(-631.99371337891, -95.004486083984),
+                vector2(-628.79742431641, -95.560668945312),
+                vector2(-629.3125, -99.937408447266),
+                vector2(-632.72399902344, -99.900733947754),
+                vector2(-633.16351318359, -102.82009887695),
+                vector2(-629.83630371094, -103.70213317871),
+                vector2(-630.39135742188, -108.07421875),
+                vector2(-633.40612792969, -107.72986602783),
+                vector2(-634.1533203125, -110.72512054443),
+                vector2(-630.83990478516, -111.62652587891),
+                vector2(-631.39916992188, -115.99180603027),
+                vector2(-634.39007568359, -115.619140625),
+                vector2(-635.0546875, -119.07189178467),
+                vector2(-638.59582519531, -118.96114349365),
+                vector2(-639.04846191406, -121.37124633789),
+                vector2(-644.34326171875, -124.97634887695)
+            },
+            ['minZ'] = 37.8,  -- min height of the shop zone
+            ['maxZ'] = 42.0,  -- max height of the shop zone
+            ['size'] = 3.25, -- size of the vehicles zones
+        },
+        ['Job'] = 'ambulance', -- Name of job or none
+        ['ShopLabel'] = 'Pillbox Vehicle Shop', -- Blip name
+        ['showBlip'] = false,  -- true or false
+        ['blipSprite'] = 326,  -- Blip sprite
+        ['blipColor'] = 3,  -- Blip color
+        ['Categories'] = { -- Categories available to browse
+            ['medical'] = 'Pillbox Hospital',
+        },
+        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        ['Location'] = vector3(-641.69, -109.55, 37.96), -- Blip Location
+        ['ReturnLocation'] = vector3(-637.43, -98.78, 38.05), -- Location to return vehicle, only enables if the vehicleshop has a job owned
+        ['VehicleSpawn'] = vector4(-645.06, -118.8, 37.88, 31.56), -- Spawn location when vehicle is bought
+        ['ShowroomVehicles'] = {
+            [1] = {
+                coords = vector4(-640.13, -112.7, 37.97, 82.36), -- where the vehicle will spawn on display
+                defaultVehicle = 'fd13', -- Default display vehicle
+                chosenVehicle = 'fd13', -- Same as default but is dynamically changed when swapping vehicles
+            },
+        },
+    },
+    ['BCSOVS'] = {
+        ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
+        ['Zone'] = {
+            ['Shape'] = { --polygon that surrounds the shop
+                vector2(1877.3469238281, 3710.4465332031),
+                vector2(1887.3852539062, 3693.1352539062),
+                vector2(1886.5712890625, 3692.4401855469),
+                vector2(1887.1793212891, 3691.3298339844),
+                vector2(1879.328125, 3686.9123535156),
+                vector2(1871.3916015625, 3682.2609863281),
+                vector2(1860.8262939453, 3701.0964355469)
+            },
+            ['minZ'] = 33.5,  -- min height of the shop zone
+            ['maxZ'] = 38.0,  -- max height of the shop zone
+            ['size'] = 3.25, -- size of the vehicles zones
+        },
+        ['Job'] = 'police', -- Name of job or none
+        ['ShopLabel'] = 'BCSO Vehicle Shop', -- Blip name
+        ['showBlip'] = false,  -- true or false
+        ['blipSprite'] = 326,  -- Blip sprite
+        ['blipColor'] = 3,  -- Blip color
+        ['Categories'] = { -- Categories available to browse
+            ['bcso'] = 'Blaine County Sheriffs Office',
+        },
+        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        ['Location'] = vector3(1878.27, 3699.09, 33.54), -- Blip Location
+        ['ReturnLocation'] = vector3(1878.99, 3690.44, 33.54), -- Location to return vehicle, only enables if the vehicleshop has a job owned
+        ['VehicleSpawn'] = vector4(1866.47, 3699.32, 33.55, 207.62), -- Spawn location when vehicle is bought
+        ['ShowroomVehicles'] = {
+            [1] = {
+                coords = vector4(1875.62, 3703.35, 33.54, 125.63), -- where the vehicle will spawn on display
+                defaultVehicle = 'SO2', -- Default display vehicle
+                chosenVehicle = 'SO2', -- Same as default but is dynamically changed when swapping vehicles
+            },
+        },
+    },
+    ['SAHPVS'] = {
+        ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
+        ['Zone'] = {
+            ['Shape'] = { --polygon that surrounds the shop
+                vector2(1542.9769287109, 805.17077636719),
+                vector2(1556.5367431641, 828.70648193359),
+                vector2(1564.4844970703, 824.08850097656),
+                vector2(1566.3449707031, 826.67803955078),
+                vector2(1569.3311767578, 825.19262695312),
+                vector2(1563.58984375, 814.29345703125),
+                vector2(1554.2863769531, 799.18859863281)
+            },
+            ['minZ'] = 77.0,  -- min height of the shop zone
+            ['maxZ'] = 81.0,  -- max height of the shop zone
+            ['size'] = 3.25, -- size of the vehicles zones
+        },
+        ['Job'] = 'police', -- Name of job or none
+        ['ShopLabel'] = 'SAHP Vehicle Shop', -- Blip name
+        ['showBlip'] = false,  -- true or false
+        ['blipSprite'] = 326,  -- Blip sprite
+        ['blipColor'] = 3,  -- Blip color
+        ['Categories'] = { -- Categories available to browse
+            ['sahp'] = 'San Andreas Highway Patrol',
+        },
+        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        ['Location'] = vector3(1550.94, 813.11, 77.06), -- Blip Location
+        ['ReturnLocation'] = vector3(1566.31, 823.08, 77.14), -- Location to return vehicle, only enables if the vehicleshop has a job owned
+        ['VehicleSpawn'] = vector4(1557.63, 808.3, 77.1, 143.93), -- Spawn location when vehicle is bought
+        ['ShowroomVehicles'] = {
+            [1] = {
+                coords = vector4(1559.6, 818.71, 77.14, 149.11), -- where the vehicle will spawn on display
+                defaultVehicle = 'HP1', -- Default display vehicle
+                chosenVehicle = 'HP1', -- Same as default but is dynamically changed when swapping vehicles
+            },
+        },
+    },-- Add your next table under this comma
     ['boats'] = {
         ['Type'] = 'free-use',  -- no player interaction is required to purchase a vehicle
         ['Zone'] = {
