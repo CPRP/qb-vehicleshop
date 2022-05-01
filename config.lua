@@ -198,7 +198,7 @@ Config.Shops = {
         ['VehicleSpawn'] = vector4(431.24, -987.03, 25.7, 180.0), -- Spawn location when vehicle is bought
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(437.39, -988.92, 25.7, 90.34), -- where the vehicle will spawn on display
+                coords = vector4(437.39, -988.92, 24.7, 90.34), -- where the vehicle will spawn on display
                 defaultVehicle = 'PD35', -- Default display vehicle
                 chosenVehicle = 'PD35', -- Same as default but is dynamically changed when swapping vehicles
             },
@@ -242,7 +242,7 @@ Config.Shops = {
         ['VehicleSpawn'] = vector4(333.0, -575.86, 28.8, 340.91), -- Spawn location when vehicle is bought
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(327.4, -584.57, 28.8, 246.48), -- where the vehicle will spawn on display
+                coords = vector4(327.4, -584.57, 27.8, 246.48), -- where the vehicle will spawn on display
                 defaultVehicle = 'FTOFD2', -- Default display vehicle
                 chosenVehicle = 'FTOFD2', -- Same as default but is dynamically changed when swapping vehicles
             },
@@ -293,7 +293,7 @@ Config.Shops = {
         ['VehicleSpawn'] = vector4(-645.06, -118.8, 37.88, 31.56), -- Spawn location when vehicle is bought
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(-640.13, -112.7, 37.97, 82.36), -- where the vehicle will spawn on display
+                coords = vector4(-640.13, -112.7, 36.97, 82.36), -- where the vehicle will spawn on display
                 defaultVehicle = 'fd13', -- Default display vehicle
                 chosenVehicle = 'fd13', -- Same as default but is dynamically changed when swapping vehicles
             },
@@ -365,7 +365,7 @@ Config.Shops = {
         ['VehicleSpawn'] = vector4(1557.63, 808.3, 77.1, 143.93), -- Spawn location when vehicle is bought
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(1559.6, 818.71, 77.14, 149.11), -- where the vehicle will spawn on display
+                coords = vector4(1559.6, 818.71, 76.14, 149.11), -- where the vehicle will spawn on display
                 defaultVehicle = 'HP1', -- Default display vehicle
                 chosenVehicle = 'HP1', -- Same as default but is dynamically changed when swapping vehicles
             },
