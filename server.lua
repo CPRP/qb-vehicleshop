@@ -114,6 +114,7 @@ RegisterNetEvent('qb-vehicleshop:server:swapVehicle', function(data)
     TriggerClientEvent('qb-vehicleshop:client:homeMenu', src) -- reopen main menu
 end)
 
+<!--
 -- Send customer for test drive
 RegisterNetEvent('qb-vehicleshop:server:customTestDrive', function(vehicle, playerid)
     local src = source
@@ -128,6 +129,7 @@ RegisterNetEvent('qb-vehicleshop:server:customTestDrive', function(vehicle, play
         TriggerClientEvent('QBCore:Notify', src, 'This player is not close enough', 'error')
     end
 end)
+-->
 
 -- Make a finance payment
 RegisterNetEvent('qb-vehicleshop:server:financePayment', function(paymentAmount, vehData)
