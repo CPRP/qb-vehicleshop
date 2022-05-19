@@ -64,6 +64,7 @@ local financeMenu = {
     }
 }
 
+<!---
 local returnTestDrive = {
     {
         header = 'Finish Test Drive',
@@ -73,6 +74,7 @@ local returnTestDrive = {
         }
     }
 }
+--->
 
 -- Functions
 
@@ -132,6 +134,7 @@ local function setClosestShowroomVehicle()
     end
 end
 
+<!---
 local function createTestDriveReturn()
     testDriveZone = BoxZone:Create(
         Config.Shops[getShopInsideOf()]["ReturnLocation"],
@@ -163,6 +166,7 @@ local function startTestDriveTimer(testDriveTime)
         end
     end)
 end
+-->
 
 local function createVehZones(shopName, entity)
     if not Config.UsingTarget then
@@ -230,6 +234,7 @@ function createFreeUseShop(shopShape, name)
                             icon = "fa-solid fa-circle-info",
                             header = getVehBrand():upper()..' '..getVehName():upper()..' - $'..getVehPrice(),
                         },
+<!---
                         {
                             header = 'Test Drive',
                             txt = 'Test drive currently selected vehicle',
@@ -238,6 +243,7 @@ function createFreeUseShop(shopShape, name)
                                 event = 'qb-vehicleshop:client:TestDrive',
                             }
                         },
+-->
                         {
                             header = "Buy Vehicle",
                             txt = 'Purchase currently selected vehicle',
@@ -301,6 +307,7 @@ function createManagedShop(shopShape, name)
                             icon = "fa-solid fa-circle-info",
                             header = getVehBrand():upper()..' '..getVehName():upper()..' - $'..getVehPrice(),
                         },
+<!---
                         {
                             header = 'Test Drive',
                             txt = 'Allow player for test drive',
@@ -313,6 +320,7 @@ function createManagedShop(shopShape, name)
                                 }
                             }
                         },
+-->
                         {
                             header = "Sell Vehicle",
                             txt = 'Sell vehicle to Player',
@@ -374,6 +382,7 @@ RegisterNetEvent('qb-vehicleshop:client:showVehOptions', function()
     exports['qb-menu']:openMenu(vehicleMenu)
 end)
 
+<!---
 RegisterNetEvent('qb-vehicleshop:client:TestDrive', function()
     if not inTestDrive and ClosestVehicle ~= 0 then
         inTestDrive = true
@@ -452,6 +461,7 @@ RegisterNetEvent('qb-vehicleshop:client:TestDriveReturn', function()
         QBCore.Functions.Notify('This is not your test drive vehicle', 'error')
     end
 end)
+-->
 
 RegisterNetEvent('qb-vehicleshop:client:vehCategories', function()
     local categoryMenu = {
