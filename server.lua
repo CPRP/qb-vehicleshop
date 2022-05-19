@@ -114,22 +114,20 @@ RegisterNetEvent('qb-vehicleshop:server:swapVehicle', function(data)
     TriggerClientEvent('qb-vehicleshop:client:homeMenu', src) -- reopen main menu
 end)
 
-<!--
--- Send customer for test drive
-RegisterNetEvent('qb-vehicleshop:server:customTestDrive', function(vehicle, playerid)
-    local src = source
-    local target = tonumber(playerid)
-    if not QBCore.Functions.GetPlayer(target) then
-        TriggerClientEvent('QBCore:Notify', src, 'Invalid Player Id Supplied', 'error')
-        return
-    end
-    if #(GetEntityCoords(GetPlayerPed(src))-GetEntityCoords(GetPlayerPed(target)))<3 then
-        TriggerClientEvent('qb-vehicleshop:client:customTestDrive', target, vehicle)
-    else
-        TriggerClientEvent('QBCore:Notify', src, 'This player is not close enough', 'error')
-    end
-end)
--->
+-- -- Send customer for test drive
+-- RegisterNetEvent('qb-vehicleshop:server:customTestDrive', function(vehicle, playerid)
+--     local src = source
+--     local target = tonumber(playerid)
+--     if not QBCore.Functions.GetPlayer(target) then
+--         TriggerClientEvent('QBCore:Notify', src, 'Invalid Player Id Supplied', 'error')
+--         return
+--     end
+--     if #(GetEntityCoords(GetPlayerPed(src))-GetEntityCoords(GetPlayerPed(target)))<3 then
+--         TriggerClientEvent('qb-vehicleshop:client:customTestDrive', target, vehicle)
+--     else
+--         TriggerClientEvent('QBCore:Notify', src, 'This player is not close enough', 'error')
+--     end
+-- end)
 
 -- Make a finance payment
 RegisterNetEvent('qb-vehicleshop:server:financePayment', function(paymentAmount, vehData)
