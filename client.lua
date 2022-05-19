@@ -45,6 +45,7 @@ end)
 local vehHeaderMenu = {
     {
         header = 'Vehicle Options',
+        icon = "fa-solid fa-car",
         txt = 'Interact with the current vehicle',
         params = {
             event = 'qb-vehicleshop:client:showVehOptions'
@@ -56,6 +57,7 @@ local financeMenu = {
     {
         header = 'Financed Vehicles',
         txt = 'Browse your owned vehicles',
+        icon = "fa-solid fa-user-ninja",
         params = {
             event = 'qb-vehicleshop:client:getVehicles'
         }
@@ -65,6 +67,7 @@ local financeMenu = {
 local returnTestDrive = {
     {
         header = 'Finish Test Drive',
+        icon = "fa-solid fa-flag-checkered",
         params = {
             event = 'qb-vehicleshop:client:TestDriveReturn'
         }
@@ -224,11 +227,13 @@ function createFreeUseShop(shopShape, name)
                     vehicleMenu = {
                         {
                             isMenuHeader = true,
+                            icon = "fa-solid fa-circle-info",
                             header = getVehBrand():upper()..' '..getVehName():upper()..' - $'..getVehPrice(),
                         },
                         {
                             header = 'Test Drive',
                             txt = 'Test drive currently selected vehicle',
+                            icon = "fa-solid fa-car-on",
                             params = {
                                 event = 'qb-vehicleshop:client:TestDrive',
                             }
@@ -236,6 +241,7 @@ function createFreeUseShop(shopShape, name)
                         {
                             header = "Buy Vehicle",
                             txt = 'Purchase currently selected vehicle',
+                            icon = "fa-solid fa-hand-holding-dollar",
                             params = {
                                 isServer = true,
                                 event = 'qb-vehicleshop:server:buyShowroomVehicle',
@@ -247,6 +253,7 @@ function createFreeUseShop(shopShape, name)
                         {
                             header = 'Finance Vehicle',
                             txt = 'Finance currently selected vehicle',
+                            icon = "fa-solid fa-coins",
                             params = {
                                 event = 'qb-vehicleshop:client:openFinance',
                                 args = {
@@ -256,6 +263,7 @@ function createFreeUseShop(shopShape, name)
                             }
                         },
                         {
+                            icon = "fa-solid fa-arrow-rotate-left",
                             header = 'Swap Vehicle',
                             txt = 'Change currently selected vehicle',
                             params = {
@@ -290,11 +298,13 @@ function createManagedShop(shopShape, name)
                     vehicleMenu = {
                         {
                             isMenuHeader = true,
+                            icon = "fa-solid fa-circle-info",
                             header = getVehBrand():upper()..' '..getVehName():upper()..' - $'..getVehPrice(),
                         },
                         {
                             header = 'Test Drive',
                             txt = 'Allow player for test drive',
+                            icon = "fa-solid fa-user-plus",
                             params = {
                                 event = 'qb-vehicleshop:client:openIdMenu',
                                 args = {
@@ -306,6 +316,7 @@ function createManagedShop(shopShape, name)
                         {
                             header = "Sell Vehicle",
                             txt = 'Sell vehicle to Player',
+                            icon = "fa-solid fa-cash-register",
                             params = {
                                 event = 'qb-vehicleshop:client:openIdMenu',
                                 args = {
@@ -317,6 +328,7 @@ function createManagedShop(shopShape, name)
                         {
                             header = 'Finance Vehicle',
                             txt = 'Finance vehicle to Player',
+                            icon = "fa-solid fa-coins",
                             params = {
                                 event = 'qb-vehicleshop:client:openCustomFinance',
                                 args = {
@@ -327,6 +339,7 @@ function createManagedShop(shopShape, name)
                         },
                         {
                             header = 'Swap Vehicle',
+                            icon = "fa-solid fa-arrow-rotate-left",
                             txt = 'Change currently selected vehicle',
                             params = {
                                 event = 'qb-vehicleshop:client:vehCategories',
@@ -443,7 +456,8 @@ end)
 RegisterNetEvent('qb-vehicleshop:client:vehCategories', function()
     local categoryMenu = {
         {
-            header = '< Go Back',
+            header = 'Go Back',
+            icon = "fa-solid fa-angle-left",
             params = {
                 event = 'qb-vehicleshop:client:homeMenu'
             }
@@ -452,6 +466,7 @@ RegisterNetEvent('qb-vehicleshop:client:vehCategories', function()
     for k,v in pairs(Config.Shops[getShopInsideOf()]['Categories']) do
         categoryMenu[#categoryMenu + 1] = {
             header = v,
+            icon = "fa-solid fa-circle",
             params = {
                 event = 'qb-vehicleshop:client:openVehCats',
                 args = {
@@ -466,7 +481,8 @@ end)
 RegisterNetEvent('qb-vehicleshop:client:openVehCats', function(data)
     local vehicleMenu = {
         {
-            header = '< Go Back',
+            header = 'Go Back',
+            icon = "fa-solid fa-angle-left",
             params = {
                 event = 'qb-vehicleshop:client:vehCategories'
             }
@@ -477,6 +493,7 @@ RegisterNetEvent('qb-vehicleshop:client:openVehCats', function(data)
             vehicleMenu[#vehicleMenu + 1] = {
                 header = v.name,
                 txt = 'Price: $'..v.price,
+                icon = "fa-solid fa-car-side",
                 params = {
                     isServer = true,
                     event = 'qb-vehicleshop:server:swapVehicle',
@@ -602,6 +619,7 @@ RegisterNetEvent('qb-vehicleshop:client:getVehicles', function()
                 ownedVehicles[#ownedVehicles + 1] = {
                     header = name,
                     txt = 'Plate: '..plate,
+                    icon = "fa-solid fa-car-side",
                     params = {
                         event = 'qb-vehicleshop:client:getVehicleFinance',
                         args = {
@@ -628,21 +646,25 @@ RegisterNetEvent('qb-vehicleshop:client:getVehicleFinance', function(data)
         },
         {
             isMenuHeader = true,
+            icon = "fa-solid fa-sack-dollar",
             header = 'Total Balance Remaining',
             txt = '$'..comma_value(data.balance)
         },
         {
             isMenuHeader = true,
+            icon = "fa-solid fa-hashtag",
             header = 'Total Payments Remaining',
             txt = data.paymentsLeft
         },
         {
             isMenuHeader = true,
+            icon = "fa-solid fa-sack-dollar",
             header = 'Recurring Payment Amount',
             txt = '$'..comma_value(data.paymentAmount)
         },
         {
             header = 'Make a payment',
+            icon = "fa-solid fa-hand-holding-dollar",
             params = {
                 event = 'qb-vehicleshop:client:financePayment',
                 args = {
@@ -654,6 +676,7 @@ RegisterNetEvent('qb-vehicleshop:client:getVehicleFinance', function(data)
         },
         {
             header = 'Payoff vehicle',
+            icon = "fa-solid fa-hand-holding-dollar",
             params = {
                 isServer = true,
                 event = 'qb-vehicleshop:server:financePaymentFull',
