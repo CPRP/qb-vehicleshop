@@ -43,7 +43,7 @@ Config.Shops = {
             ['cycles'] = 'Bicycles',
             ['custom'] = 'Custom Vehicles'
         },
-        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(-45.67, -1098.34, 26.42), -- Blip Location
         ['ReturnLocation'] = vector3(-44.74, -1082.58, 26.68), -- Location to return vehicle, only enables if the vehicleshop has a job owned
         ['VehicleSpawn'] = vector4(-56.79, -1109.85, 26.43, 71.5), -- Spawn location when vehicle is bought
@@ -118,7 +118,7 @@ Config.Shops = {
             ['sports'] = 'Sports',
             ['imports'] = 'Imports'
         },
-        ['TestDriveTimeLimit'] = 0.5,
+        -- ['TestDriveTimeLimit'] = 0.5,
         ['Location'] = vector3(-1255.6, -361.16, 36.91),
         ['ReturnLocation'] = vector3(-1231.46, -349.86, 37.33),
         ['VehicleSpawn'] = vector4(-1231.46, -349.86, 37.33, 26.61),
@@ -192,7 +192,7 @@ Config.Shops = {
         ['Categories'] = { -- Categories available to browse
             ['lspd'] = 'Los Santos Police Department',
         },
-        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(437.06, -993.06, 25.7), -- Blip Location
         ['ReturnLocation'] = vector3(437.43, -994.29, 25.7), -- Location to return vehicle, only enables if the vehicleshop has a job owned
         ['VehicleSpawn'] = vector4(431.24, -987.03, 25.7, 180.0), -- Spawn location when vehicle is bought
@@ -236,7 +236,7 @@ Config.Shops = {
         ['Categories'] = { -- Categories available to browse
             ['medical'] = 'Pillbox Hospital',
         },
-        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(328.86, -576.66, 28.8), -- Blip Location
         ['ReturnLocation'] = vector3(322.21, -566.11, 28.8), -- Location to return vehicle, only enables if the vehicleshop has a job owned
         ['VehicleSpawn'] = vector4(333.0, -575.86, 28.8, 340.91), -- Spawn location when vehicle is bought
@@ -287,7 +287,7 @@ Config.Shops = {
         ['Categories'] = { -- Categories available to browse
             ['medical'] = 'Pillbox Hospital',
         },
-        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(-641.69, -109.55, 37.96), -- Blip Location
         ['ReturnLocation'] = vector3(-637.43, -98.78, 38.05), -- Location to return vehicle, only enables if the vehicleshop has a job owned
         ['VehicleSpawn'] = vector4(-645.06, -118.8, 37.88, 31.56), -- Spawn location when vehicle is bought
@@ -323,7 +323,7 @@ Config.Shops = {
         ['Categories'] = { -- Categories available to browse
             ['bcso'] = 'Blaine County Sheriffs Office',
         },
-        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(1878.27, 3699.09, 33.54), -- Blip Location
         ['ReturnLocation'] = vector3(1878.99, 3690.44, 33.54), -- Location to return vehicle, only enables if the vehicleshop has a job owned
         ['VehicleSpawn'] = vector4(1866.47, 3699.32, 33.55, 207.62), -- Spawn location when vehicle is bought
@@ -359,7 +359,7 @@ Config.Shops = {
         ['Categories'] = { -- Categories available to browse
             ['sahp'] = 'San Andreas Highway Patrol',
         },
-        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(1550.94, 813.11, 77.06), -- Blip Location
         ['ReturnLocation'] = vector3(1566.31, 823.08, 77.14), -- Location to return vehicle, only enables if the vehicleshop has a job owned
         ['VehicleSpawn'] = vector4(1557.63, 808.3, 77.1, 143.93), -- Spawn location when vehicle is bought
@@ -392,7 +392,7 @@ Config.Shops = {
         ['Categories'] = { -- Categories available to browse
             ['boats'] = 'Boats',
         },
-        ['TestDriveTimeLimit'] = 1.5, -- Time in minutes until the vehicle gets deleted
+        -- ['TestDriveTimeLimit'] = 1.5, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(-738.25, -1334.38, 1.6), -- Blip Location
         ['ReturnLocation'] = vector3(-714.34, -1343.31, 0.0), -- Location to return vehicle, only enables if the vehicleshop has a job owned
         ['VehicleSpawn'] = vector4(-727.87, -1353.1, -0.17, 137.09), -- Spawn location when vehicle is bought
