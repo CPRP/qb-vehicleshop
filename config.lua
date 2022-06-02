@@ -215,7 +215,6 @@ Config.Shops = {
             },
         }
     },
-    },
     ['LSPDVS'] = {
         ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
         ['Zone'] = {
