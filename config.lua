@@ -190,27 +190,27 @@ Config.Shops = {
         ['VehicleSpawn'] = vector4(-773.7, -233.67, 37.08, 205.88),
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(-783.43, -223.39, 37.32, 131.13), -- where the vehicle will spawn on display
+                coords = vector4(-783.43, -223.39, 36.32, 131.13), -- where the vehicle will spawn on display
                 defaultVehicle = 'dtdbolide', -- Default display vehicle
                 chosenVehicle = 'dtdbolide', -- Same as default but is dynamically changed when swapping vehicles
             },
             [2] = {
-                coords = vector4(-789.67, -240.15, 37.08, 171.37),
+                coords = vector4(-789.67, -240.15, 36.08, 171.37),
                 defaultVehicle = 'hondacivictr',
                 chosenVehicle = 'hondacivictr',
             },
             [3] = {
-                coords = vector4(-792.49, -235.38, 37.08, 178.0),
+                coords = vector4(-792.49, -235.38, 36.08, 178.0),
                 defaultVehicle = 'wrx15',
                 chosenVehicle = 'wrx15',
             },
             [4] = {
-                coords = vector4(-786.84, -244.61, 37.08, 163.44),
+                coords = vector4(-786.84, -244.61, 36.08, 163.44),
                 defaultVehicle = 'r32',
                 chosenVehicle = 'r32',
             },
             [5] = {
-                coords = vector4(-795.71, -230.26, 37.08, 212.41),
+                coords = vector4(-795.71, -230.26, 36.08, 212.41),
                 defaultVehicle = 'a80',
                 chosenVehicle = 'a80',
             },
