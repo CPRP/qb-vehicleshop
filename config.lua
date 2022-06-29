@@ -341,12 +341,12 @@ Config.Shops = {
             ['size'] = 3.25, -- size of the vehicles zones
         },
         ['Job'] = 'ambulance', -- Name of job or none
-        ['ShopLabel'] = 'Pillbox Vehicle Shop', -- Blip name
+        ['ShopLabel'] = 'LSFD Vehicle Shop', -- Blip name
         ['showBlip'] = false,  -- true or false
         ['blipSprite'] = 326,  -- Blip sprite
         ['blipColor'] = 3,  -- Blip color
         ['Categories'] = { -- Categories available to browse
-            ['medical'] = 'Pillbox Hospital',
+            ['medical'] = 'Los Santos Fire Department',
         },
         -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(-641.69, -109.55, 37.96), -- Blip Location
