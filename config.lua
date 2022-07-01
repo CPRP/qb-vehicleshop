@@ -391,8 +391,8 @@ Config.Shops = {
         ['ShowroomVehicles'] = {
             [1] = {
                 coords = vector4(1875.62, 3703.35, 33.54, 125.63), -- where the vehicle will spawn on display
-                defaultVehicle = 'SO2', -- Default display vehicle
-                chosenVehicle = 'SO2', -- Same as default but is dynamically changed when swapping vehicles
+                defaultVehicle = 'valor18charg', -- Default display vehicle
+                chosenVehicle = 'valor18charg', -- Same as default but is dynamically changed when swapping vehicles
             },
         },
     },
@@ -413,12 +413,12 @@ Config.Shops = {
             ['size'] = 3.25, -- size of the vehicles zones
         },
         ['Job'] = 'police', -- Name of job or none
-        ['ShopLabel'] = 'SAHP Vehicle Shop', -- Blip name
+        ['ShopLabel'] = 'SASP Vehicle Shop', -- Blip name
         ['showBlip'] = false,  -- true or false
         ['blipSprite'] = 326,  -- Blip sprite
         ['blipColor'] = 3,  -- Blip color
         ['Categories'] = { -- Categories available to browse
-            ['sahp'] = 'San Andreas Highway Patrol',
+            ['sahp'] = 'San Andreas State Police',
         },
         -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(1550.94, 813.11, 77.06), -- Blip Location
@@ -427,8 +427,8 @@ Config.Shops = {
         ['ShowroomVehicles'] = {
             [1] = {
                 coords = vector4(1559.6, 818.71, 76.14, 149.11), -- where the vehicle will spawn on display
-                defaultVehicle = 'HP1', -- Default display vehicle
-                chosenVehicle = 'HP1', -- Same as default but is dynamically changed when swapping vehicles
+                defaultVehicle = 'liberty18charg', -- Default display vehicle
+                chosenVehicle = 'liberty18charg', -- Same as default but is dynamically changed when swapping vehicles
             },
         },
     },-- Add your next table under this comma
