@@ -482,6 +482,7 @@ Config.Shops = {
             },
         },
     },
+}
 --     ['air'] = {
 --         ['Type'] = 'free-use', -- no player interaction is required to purchase a vehicle
 --         ['Zone'] = {
