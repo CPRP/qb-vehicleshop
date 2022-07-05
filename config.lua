@@ -262,8 +262,8 @@ Config.Shops = {
         ['ShowroomVehicles'] = {
             [1] = {
                 coords = vector4(437.39, -988.92, 24.7, 90.34), -- where the vehicle will spawn on display
-                defaultVehicle = 'PD35', -- Default display vehicle
-                chosenVehicle = 'PD35', -- Same as default but is dynamically changed when swapping vehicles
+                defaultVehicle = 'code3cvpi', -- Default display vehicle
+                chosenVehicle = 'code3cvpi', -- Same as default but is dynamically changed when swapping vehicles
             },
         },
     },
@@ -306,8 +306,8 @@ Config.Shops = {
         ['ShowroomVehicles'] = {
             [1] = {
                 coords = vector4(327.4, -584.57, 27.8, 246.48), -- where the vehicle will spawn on display
-                defaultVehicle = 'FTOFD2', -- Default display vehicle
-                chosenVehicle = 'FTOFD2', -- Same as default but is dynamically changed when swapping vehicles
+                defaultVehicle = 'ambulance', -- Default display vehicle
+                chosenVehicle = 'ambulance', -- Same as default but is dynamically changed when swapping vehicles
             },
         },
     },
