@@ -8,6 +8,11 @@ RegisterNetEvent('qb-vehicleshop:server:addPlayer', function(citizenid, gameTime
     financetimer[citizenid] = gameTime
 end)
 
+-- Check's Repo (added 6/25 for repo sent to depot)
+RegisterNetEvent('qb-vehicleshop:server:checkRepo', function()
+    MySQL.update('UPDATE player_vehicles SET state = ? WHERE depotprice>=1', {0})
+end)
+
 -- Deduct stored game time from player on logout
 RegisterNetEvent('qb-vehicleshop:server:removePlayer', function(citizenid)
     if financetimer[citizenid] then
@@ -430,9 +435,12 @@ RegisterNetEvent('qb-vehicleshop:server:checkFinance', function()
         local vehicles = MySQL.query.await(query, {player.PlayerData.citizenid})
         for _, v in pairs(vehicles) do
             local plate = v.plate
-            MySQL.query('DELETE FROM player_vehicles WHERE plate = @plate', {['@plate'] = plate})
-            --MySQL.update('UPDATE player_vehicles SET citizenid = ? WHERE plate = ?', {'REPO-'..v.citizenid, plate}) -- Use this if you don't want them to be deleted
+            -- MySQL.query('DELETE FROM player_vehicles WHERE plate = @plate', {['@plate'] = plate})
+            -- MySQL.update('UPDATE player_vehicles SET citizenid = ? WHERE plate = ?', {'REPO-'..v.citizenid, plate}) -- Use this if you don't want them to be deleted
+            -- TriggerClientEvent('QBCore:Notify', src, Lang:t('error.repossessed', {plate = plate}), 'error')
+            MySQL.update('UPDATE player_vehicles SET state = ?, depotprice = ? WHERE plate = ?', {0, v.balance * 1.5, plate,}) -- This line and next 2 lines are for repo to depot 6/25
             TriggerClientEvent('QBCore:Notify', src, Lang:t('error.repossessed', {plate = plate}), 'error')
+            MySQL.update('UPDATE player_vehicles SET balance = ?, paymentamount = ?, paymentsleft = ? WHERE plate = ?', {0, 0, 0, plate,})
         end
     end
 end)
