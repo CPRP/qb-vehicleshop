@@ -16,6 +16,7 @@ AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
     local gameTime = GetGameTimer()
     TriggerServerEvent('qb-vehicleshop:server:addPlayer', citizenid, gameTime)
     TriggerServerEvent('qb-vehicleshop:server:checkFinance')
+    TriggerServerEvent('qb-vehicleshop:server:checkRepo')
     if not Initialized then Init() end
 end)
 
