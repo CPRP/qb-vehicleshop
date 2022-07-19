@@ -140,13 +140,20 @@ end
 --     end)
 -- end
 
--- local function startTestDriveTimer(testDriveTime)
+-- local function startTestDriveTimer(testDriveTime, prevCoords)
 --     local gameTimer = GetGameTimer()
 --     CreateThread(function()
 --         while inTestDrive do
 --             if GetGameTimer() < gameTimer + tonumber(1000 * testDriveTime) then
 --                 local secondsLeft = GetGameTimer() - gameTimer
---                 drawTxt('Test Drive Time Remaining: '..math.ceil(testDriveTime - secondsLeft / 1000), 4, 0.5, 0.93, 0.50, 255, 255, 255, 180)
+--                 if secondsLeft >= tonumber(1000 * testDriveTime) - 20 then
+--                     QBCore.Functions.DeleteVehicle(testDriveVeh)
+--                     testDriveVeh = 0
+--                     inTestDrive = false
+--                     SetEntityCoords(PlayerPedId(), prevCoords)
+--                     QBCore.Functions.Notify(Lang:t('general.testdrive_complete'))
+--                 end
+--                 drawTxt(Lang:t('general.testdrive_timer') .. math.ceil(testDriveTime - secondsLeft / 1000), 4, 0.5, 0.93, 0.50, 255, 255, 255, 180)
 --             end
 --             Wait(0)
 --         end
@@ -431,18 +438,9 @@ end)
 --             TriggerEvent('vehiclekeys:client:SetOwner', QBCore.Functions.GetPlate(veh))
 --             testDriveVeh = veh
 --             QBCore.Functions.Notify(Lang:t('general.testdrive_timenoti', {testdrivetime = Config.Shops[closestShop]["TestDriveTimeLimit"]}))
---             SetTimeout(Config.Shops[closestShop]["TestDriveTimeLimit"] * 60000, function()
---                 if testDriveVeh ~= 0 then
---                     QBCore.Functions.DeleteVehicle(testDriveVeh)
---                     testDriveVeh = 0
---                     inTestDrive = false
---                     SetEntityCoords(PlayerPedId(), prevCoords)
---                     QBCore.Functions.Notify(Lang:t('general.testdrive_complete'))
---                 end
---             end)
 --         end, Config.Shops[insideShop]["TestDriveSpawn"], false)
 --         createTestDriveReturn()
---         startTestDriveTimer(Config.Shops[insideShop]["TestDriveTimeLimit"] * 60)
+--         startTestDriveTimer(Config.Shops[insideShop]["TestDriveTimeLimit"] * 60, prevCoords)
 --     else
 --         QBCore.Functions.Notify(Lang:t('error.testdrive_alreadyin'), 'error')
 --     end
@@ -462,18 +460,9 @@ end)
 --             TriggerEvent('vehiclekeys:client:SetOwner', QBCore.Functions.GetPlate(veh))
 --             testDriveVeh = veh
 --             QBCore.Functions.Notify(Lang:t('general.testdrive_timenoti', {testdrivetime = Config.Shops[insideShop]["TestDriveTimeLimit"]}))
---             SetTimeout(Config.Shops[insideShop]["TestDriveTimeLimit"] * 60000, function()
---                 if testDriveVeh ~= 0 then
---                     QBCore.Functions.DeleteVehicle(testDriveVeh)
---                     testDriveVeh = 0
---                     inTestDrive = false
---                     SetEntityCoords(PlayerPedId(), prevCoords)
---                     QBCore.Functions.Notify(Lang:t('general.testdrive_complete'))
---                 end
---             end)
 --         end, Config.Shops[insideShop]["TestDriveSpawn"], false)
 --         createTestDriveReturn()
---         startTestDriveTimer(Config.Shops[insideShop]["TestDriveTimeLimit"] * 60)
+--         startTestDriveTimer(Config.Shops[insideShop]["TestDriveTimeLimit"] * 60, prevCoords)
 --     else
 --         QBCore.Functions.Notify(Lang:t('error.testdrive_alreadyin'), 'error')
 --     end
