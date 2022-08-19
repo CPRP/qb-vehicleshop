@@ -183,7 +183,8 @@ Config.Shops = {
             ['super'] = 'Super',
             ['sports'] = 'Sports',
             ['imports'] = 'Imports',
-            ['oneofone'] = '1 Of 1'
+            ['oneofone'] = '1 Of 1',
+            ['moviecars'] = 'Movie Cars',
         },
         -- ['TestDriveTimeLimit'] = 0.5,
         ['Location'] = vector3(-799.33, -221.63, 37.08),
