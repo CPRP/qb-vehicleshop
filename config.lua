@@ -157,68 +157,239 @@ Config.Shops = {
     --         },
     --     }
     -- },
-    ['luxuryautos'] = {
+    -- ['luxuryautos'] = {
+    --     ['Type'] = 'managed',  -- meaning a real player has to sell the car
+    --     ['Zone'] = {
+    --         ['Shape'] = {
+    --             vector2(-788.36016845703, -249.63743591309),
+    --             vector2(-772.89184570313, -243.73014831543),
+    --             vector2(-760.07312011719, -238.43655395508),
+    --             vector2(-783.64318847656, -198.9468536377),
+    --             vector2(-790.96185302734, -203.83338928223),
+    --             vector2(-800.06072998047, -188.17231750488),
+    --             vector2(-815.92437744141, -197.20959472656),
+    --             vector2(-816.45330810547, -196.55017089844),
+    --             vector2(-818.30737304688, -197.78021240234)
+    --         },
+    --         ['minZ'] = 37.0383644104,
+    --         ['maxZ'] = 37.511798858643,
+    --         ['size'] = 2.75, -- size of the vehicles zones
+    --     },
+    --     ['Job'] = 'cardealer', -- Name of job or none
+    --     ['ShopLabel'] = 'Luxury Autos',
+    --     ['showBlip'] = true,  -- true or false
+    --     ['blipSprite'] = 596,  -- Blip sprite
+    --     ['blipColor'] = 3,  -- Blip color
+    --     ['Categories'] = {
+    --         ['super'] = 'Super',
+    --         ['sports'] = 'Sports',
+    --         ['imports'] = 'Imports',
+    --         ['oneofone'] = '1 Of 1',
+    --         ['moviecars'] = 'Movie Cars',
+    --     },
+    --     -- ['TestDriveTimeLimit'] = 0.5,
+    --     ['Location'] = vector3(-799.33, -221.63, 37.08),
+    --     ['ReturnLocation'] = vector3(-768.52, -231.68, 37.08),
+    --     ['VehicleSpawn'] = vector4(-773.7, -233.67, 37.08, 205.88),
+    --     ['TestDriveSpawn'] = vector4(-1232.81, -347.99, 37.33, 23.28), -- Spawn location for test drive
+    --     ['ShowroomVehicles'] = {
+    --         [1] = {
+    --             coords = vector4(-783.43, -223.39, 36.32, 131.13), -- where the vehicle will spawn on display
+    --             defaultVehicle = 'dtdbolide', -- Default display vehicle
+    --             chosenVehicle = 'dtdbolide', -- Same as default but is dynamically changed when swapping vehicles
+    --         },
+    --         [2] = {
+    --             coords = vector4(-789.67, -240.15, 36.08, 171.37),
+    --             defaultVehicle = 'hondacivictr',
+    --             chosenVehicle = 'hondacivictr',
+    --         },
+    --         [3] = {
+    --             coords = vector4(-792.49, -235.38, 36.08, 178.0),
+    --             defaultVehicle = 'wrx15',
+    --             chosenVehicle = 'wrx15',
+    --         },
+    --         [4] = {
+    --             coords = vector4(-786.84, -244.61, 36.08, 163.44),
+    --             defaultVehicle = 'r32',
+    --             chosenVehicle = 'r32',
+    --         },
+    --         [5] = {
+    --             coords = vector4(-795.71, -230.26, 36.08, 212.41),
+    --             defaultVehicle = 'a80',
+    --             chosenVehicle = 'a80',
+    --         },
+    --     }
+    -- },
+    ['lsmotors'] = {
         ['Type'] = 'managed',  -- meaning a real player has to sell the car
         ['Zone'] = {
             ['Shape'] = {
-                vector2(-788.36016845703, -249.63743591309),
-                vector2(-772.89184570313, -243.73014831543),
-                vector2(-760.07312011719, -238.43655395508),
-                vector2(-783.64318847656, -198.9468536377),
-                vector2(-790.96185302734, -203.83338928223),
-                vector2(-800.06072998047, -188.17231750488),
-                vector2(-815.92437744141, -197.20959472656),
-                vector2(-816.45330810547, -196.55017089844),
-                vector2(-818.30737304688, -197.78021240234)
+                vector2(114.72692871094, -1113.3160400391),
+                vector2(114.76803588867, -1116.9927978516),
+                vector2(147.92083740234, -1117.4232177734),
+                vector2(147.70713806152, -1121.951171875),
+                vector2(178.70559692383, -1122.2172851562),
+                vector2(188.60453796387, -1118.6016845703),
+                vector2(195.17059326172, -1105.7963867188),
+                vector2(195.66481018066, -1086.9372558594),
+                vector2(173.28337097168, -1084.5700683594),
+                vector2(115.25202178955, -1084.7478027344)
             },
-            ['minZ'] = 37.0383644104,
-            ['maxZ'] = 37.511798858643,
-            ['size'] = 2.75, -- size of the vehicles zones
+            ['minZ'] = 26.0,
+            ['maxZ'] = 32.0,
+            ['size'] = 3.75
         },
         ['Job'] = 'cardealer', -- Name of job or none
-        ['ShopLabel'] = 'Luxury Autos',
-        ['showBlip'] = true,  -- true or false
-        ['blipSprite'] = 596,  -- Blip sprite
-        ['blipColor'] = 3,  -- Blip color
+        ['ShopLabel'] = 'LS Motors',
         ['Categories'] = {
             ['super'] = 'Super',
             ['sports'] = 'Sports',
             ['imports'] = 'Imports',
             ['oneofone'] = '1 Of 1',
             ['moviecars'] = 'Movie Cars',
+            ['bikes'] = 'Motorcycles',
         },
         -- ['TestDriveTimeLimit'] = 0.5,
-        ['Location'] = vector3(-799.33, -221.63, 37.08),
-        ['ReturnLocation'] = vector3(-768.52, -231.68, 37.08),
-        ['VehicleSpawn'] = vector4(-773.7, -233.67, 37.08, 205.88),
-        ['TestDriveSpawn'] = vector4(-1232.81, -347.99, 37.33, 23.28), -- Spawn location for test drive
+        ['Location'] = vector3(162.22, -1103.83, 29.21),
+        ['ReturnLocation'] = vector3(135.52, -1101.24, 29.26),
+        ['VehicleSpawn'] = vector4(120.54, -1098.73, 29.2, 178.26),
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(-783.43, -223.39, 36.32, 131.13), -- where the vehicle will spawn on display
-                defaultVehicle = 'dtdbolide', -- Default display vehicle
-                chosenVehicle = 'dtdbolide', -- Same as default but is dynamically changed when swapping vehicles
+                coords = vector4(152.45, -1091.75, 28.36, 239.56),
+                defaultVehicle = 'italirsx',
+                chosenVehicle = 'italirsx',
             },
             [2] = {
-                coords = vector4(-789.67, -240.15, 36.08, 171.37),
-                defaultVehicle = 'hondacivictr',
-                chosenVehicle = 'hondacivictr',
+                coords = vector4(150.75, -1100.02, 28.37, 269.46),
+                defaultVehicle = 'italigtb',
+                chosenVehicle = 'italigtb',
             },
             [3] = {
-                coords = vector4(-792.49, -235.38, 36.08, 178.0),
-                defaultVehicle = 'wrx15',
-                chosenVehicle = 'wrx15',
+                coords = vector4(153.29, -1108.15, 28.36, 303.14),
+                defaultVehicle = 'nero',
+                chosenVehicle = 'nero',
             },
             [4] = {
-                coords = vector4(-786.84, -244.61, 36.08, 163.44),
-                defaultVehicle = 'r32',
-                chosenVehicle = 'r32',
+                coords = vector4(155.64, -1113.72, 28.32, 273.59),
+                defaultVehicle = 'comet2',
+                chosenVehicle = 'comet2',
             },
             [5] = {
-                coords = vector4(-795.71, -230.26, 36.08, 212.41),
-                defaultVehicle = 'a80',
-                chosenVehicle = 'a80',
+                coords = vector4(168.88, -1113.97, 28.32, 89.09),
+                defaultVehicle = 't20',
+                chosenVehicle = 't20',
             },
-        }
+            [6] = {
+                coords = vector4(170.49, -1107.85, 28.36, 66.46),
+                defaultVehicle = 'osiris',
+                chosenVehicle = 'osiris',
+            },
+            [7] = {
+                coords = vector4(172.4, -1100.13, 28.37, 86.83),
+                defaultVehicle = 'penetrator',
+                chosenVehicle = 'penetrator',
+            },
+            [8] = {
+                coords = vector4(180.63, -1106.97, 28.4, 241.58),
+                defaultVehicle = 'pfister811',
+                chosenVehicle = 'pfister811',
+            },
+            [9] = {
+                coords = vector4(180.65, -1102.58, 28.4, 246.31),
+                defaultVehicle = 'prototipo',
+                chosenVehicle = 'prototipo',
+            },
+            [10] = {
+                coords = vector4(180.72, -1098.66, 28.4, 239.54),
+                defaultVehicle = 'reaper',
+                chosenVehicle = 'reaper',
+            },
+            [11] = {
+                coords = vector4(181.01, -1094.64, 28.4, 248.29),
+                defaultVehicle = 'sc1',
+                chosenVehicle = 'sc1',
+            },
+            [12] = {
+                coords = vector4(174.45, -1092.42, 28.34, 155.68),
+                defaultVehicle = 'carbonrs',
+                chosenVehicle = 'carbonrs',
+            },
+            [13] = {
+                coords = vector4(172.48, -1092.47, 28.33, 157.57),
+                defaultVehicle = 'bf400',
+                chosenVehicle = 'bf400',
+            },
+            [14] = {
+                coords = vector4(170.45, -1092.56, 28.33, 155.7),
+                defaultVehicle = 'bati2',
+                chosenVehicle = 'bati2',
+            },
+            [15] = {
+                coords = vector4(168.62, -1092.43, 28.34, 149.62),
+                defaultVehicle = 'bati',
+                chosenVehicle = 'bati',
+            },
+            [16] = {
+                coords = vector4(166.68, -1092.34, 28.34, 155.66),
+                defaultVehicle = 'akuma',
+                chosenVehicle = 'akuma',
+            },
+            [17] = {
+                coords = vector4(156.34, -1105.25, 22.55, 1.82),
+                defaultVehicle = 'tigon',
+                chosenVehicle = 'tigon',
+            },
+            [18] = {
+                coords = vector4(152.19, -1104.96, 22.54, 2.03),
+                defaultVehicle = 'turismor',
+                chosenVehicle = 'turismor',
+            },
+            [19] = {
+                coords = vector4(148.15, -1104.66, 22.54, 358.89),
+                defaultVehicle = 'tyrant',
+                chosenVehicle = 'tyrant',
+            },
+            [20] = {
+                coords = vector4(144.06, -1104.66, 22.54, 358.94),
+                defaultVehicle = 'tyrus',
+                chosenVehicle = 'tyrus',
+            },
+            [21] = {
+                coords = vector4(139.89, -1104.96, 22.54, 0.09),
+                defaultVehicle = 'vacca',
+                chosenVehicle = 'vacca',
+            },
+            [22] = {
+                coords = vector4(135.9, -1104.95, 22.54, 2.62),
+                defaultVehicle = 'vagner',
+                chosenVehicle = 'vagner',
+            },
+            [23] = {
+                coords = vector4(135.85, -1091.64, 22.55, 183.12),
+                defaultVehicle = 'visione',
+                chosenVehicle = 'visione',
+            },
+            [24] = {
+                coords = vector4(140.1, -1091.9, 22.54, 179.45),
+                defaultVehicle = 'voltic',
+                chosenVehicle = 'voltic',
+            },
+            [25] = {
+                coords = vector4(144.1, -1091.76, 22.55, 184.67),
+                defaultVehicle = 'zorrusso',
+                chosenVehicle = 'zorrusso',
+            },
+            [26] = {
+                coords = vector4(148.24, -1091.71, 22.55, 180.47),
+                defaultVehicle = 'xa21',
+                chosenVehicle = 'xa21',
+            },
+            [27] = {
+                coords = vector4(152.18, -1091.81, 22.54, 182.82),
+                defaultVehicle = 'zentorno',
+                chosenVehicle = 'zentorno',
+            },
+        },
     },
     ['LSPDVS'] = {
         ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
