@@ -394,6 +394,76 @@ Config.Shops = {
             },
         },
     },
+    ['ottos'] = {
+        ['Type'] = 'managed',  -- meaning a real player has to sell the car
+        ['Zone'] = {
+            ['Shape'] = {
+                vector2(793.66473388672, -833.41107177734),
+                vector2(817.26861572266, -833.62554931641),
+                vector2(817.19519042969, -795.419921875),
+                vector2(793.76245117188, -795.46026611328),
+                vector2(788.22900390625, -795.50628662109),
+                vector2(788.12689208984, -833.18182373047)
+            },
+            ['minZ'] = 22.0,
+            ['maxZ'] = 29.0,
+            ['size'] = 3.25
+        },
+        ['Job'] = 'ottos', -- Name of job or none
+        ['showBlip'] = true, -- true or false
+        ['blipSprite'] = 226, -- Blip sprite
+        ['blipColor'] = 3, -- Blip color
+        ['ShopLabel'] = 'Ottos Dealership',
+        ['Categories'] = {
+            ['motorcycles'] = 'Motorcycles',
+        },
+        -- ['TestDriveTimeLimit'] = 0.5,
+        ['Location'] = vector3(801.11, -823.67, 26.34),
+        ['ReturnLocation'] = vector3(796.63, -818.23, 26.18),
+        ['VehicleSpawn'] = vector4(802.61, -820.4, 26.18, 273.6),
+        ['ShowroomVehicles'] = {
+            [1] = {
+                coords = vector4(797.14, -815.08, 25.18, 268.51),
+                defaultVehicle = 'zombieb',
+                chosenVehicle = 'zombieb',
+            },
+            [2] = {
+                coords = vector4(797.0, -811.77, 25.18, 268.55),
+                defaultVehicle = 'wolfsbane',
+                chosenVehicle = 'wolfsbane',
+            },
+            [3] = {
+                coords = vector4(796.8, -808.76, 25.25, 269.7),
+                defaultVehicle = 'vader',
+                chosenVehicle = 'vader',
+            },
+            [4] = {
+                coords = vector4(796.82, -805.37, 25.27, 272.24),
+                defaultVehicle = 'thrust',
+                chosenVehicle = 'thrust',
+            },
+            [5] = {
+                coords = vector4(808.95, -805.45, 25.23, 89.99),
+                defaultVehicle = 'sovereign',
+                chosenVehicle = 'sovereign',
+            },
+            [6] = {
+                coords = vector4(809.0, -808.7, 25.22, 93.7),
+                defaultVehicle = 'sanchez2',
+                chosenVehicle = 'sanchez2',
+            },
+            [7] = {
+                coords = vector4(808.72, -812.01, 25.18, 93.22),
+                defaultVehicle = 'sanctus',
+                chosenVehicle = 'sanctus',
+            },
+            [8] = {
+                coords = vector4(808.75, -814.89, 25.19, 93.72),
+                defaultVehicle = 'ruffian',
+                chosenVehicle = 'ruffian',
+            },
+        },
+    },
     ['LSPDVS'] = {
         ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
         ['Zone'] = {
