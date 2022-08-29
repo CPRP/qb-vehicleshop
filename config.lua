@@ -235,11 +235,14 @@ Config.Shops = {
                 vector2(173.28337097168, -1084.5700683594),
                 vector2(115.25202178955, -1084.7478027344)
             },
-            ['minZ'] = 26.0,
+            ['minZ'] = 20.0,
             ['maxZ'] = 32.0,
             ['size'] = 3.75
         },
         ['Job'] = 'cardealer', -- Name of job or none
+        ['showBlip'] = true, -- true or false
+        ['blipSprite'] = 596, -- Blip sprite
+        ['blipColor'] = 3, -- Blip color
         ['ShopLabel'] = 'LS Motors',
         ['Categories'] = {
             ['super'] = 'Super',
