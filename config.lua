@@ -589,20 +589,21 @@ Config.Shops = {
             },
         },
     },
-    ['BCSOVS'] = {
+    ['gabzbcso'] = {
         ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
         ['Zone'] = {
             ['Shape'] = { --polygon that surrounds the shop
-                vector2(1877.3469238281, 3710.4465332031),
-                vector2(1887.3852539062, 3693.1352539062),
-                vector2(1886.5712890625, 3692.4401855469),
-                vector2(1887.1793212891, 3691.3298339844),
-                vector2(1879.328125, 3686.9123535156),
-                vector2(1871.3916015625, 3682.2609863281),
-                vector2(1860.8262939453, 3701.0964355469)
+                vector2(1870.3189697266, 3691.2690429688),
+                vector2(1855.5126953125, 3716.7619628906),
+                vector2(1806.5192871094, 3688.3515625),
+                vector2(1808.751953125, 3683.7770996094),
+                vector2(1803.3559570312, 3680.1166992188),
+                vector2(1807.8302001953, 3672.3713378906),
+                vector2(1806.3052978516, 3671.4150390625),
+                vector2(1813.8004150391, 3658.7670898438)
             },
-            ['minZ'] = 33.5,  -- min height of the shop zone
-            ['maxZ'] = 38.0,  -- max height of the shop zone
+            ['minZ'] = 30.5,  -- min height of the shop zone
+            ['maxZ'] = 37.0,  -- max height of the shop zone
             ['size'] = 3.25, -- size of the vehicles zones
         },
         ['Job'] = 'police', -- Name of job or none
@@ -616,10 +617,10 @@ Config.Shops = {
         -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(1878.27, 3699.09, 33.54), -- Blip Location
         ['ReturnLocation'] = vector3(1878.99, 3690.44, 33.54), -- Location to return vehicle, only enables if the vehicleshop has a job owned
-        ['VehicleSpawn'] = vector4(1866.47, 3699.32, 33.55, 207.62), -- Spawn location when vehicle is bought
+        ['VehicleSpawn'] = vector4(1828.39, 3695.14, 33.97, 298.4), -- Spawn location when vehicle is bought
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(1875.62, 3703.35, 32.54, 125.63), -- where the vehicle will spawn on display
+                coords = vector4(1831.5, 3689.33, 33.97, 31.44), -- where the vehicle will spawn on display
                 defaultVehicle = 'valor18charg', -- Default display vehicle
                 chosenVehicle = 'valor18charg', -- Same as default but is dynamically changed when swapping vehicles
             },
