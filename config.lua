@@ -620,7 +620,7 @@ Config.Shops = {
         ['VehicleSpawn'] = vector4(1828.39, 3695.14, 33.97, 298.4), -- Spawn location when vehicle is bought
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(1831.5, 3689.33, 33.97, 31.44), -- where the vehicle will spawn on display
+                coords = vector4(1831.5, 3689.33, 32.97, 31.44), -- where the vehicle will spawn on display
                 defaultVehicle = 'valor18charg', -- Default display vehicle
                 chosenVehicle = 'valor18charg', -- Same as default but is dynamically changed when swapping vehicles
             },
