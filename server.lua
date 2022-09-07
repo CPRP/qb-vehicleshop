@@ -108,6 +108,13 @@ QBCore.Functions.CreateCallback('qb-vehicleshop:server:getVehicles', function(so
 end)
 
 -- Events
+
+-- Brute force vehicle deletion
+RegisterNetEvent('qb-vehicleshop:server:deleteVehicle', function (netId)
+    local vehicle = NetworkGetEntityFromNetworkId(netId)
+    DeleteEntity(vehicle)
+end)
+
 -- Sync vehicle for other players
 RegisterNetEvent('qb-vehicleshop:server:swapVehicle', function(data)
     local src = source
