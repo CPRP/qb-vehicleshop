@@ -375,73 +375,131 @@ Config.Shops = {
             },
         },
     },
-    ['ottos'] = {
+    -- ['ottos'] = {
+    --     ['Type'] = 'managed',  -- meaning a real player has to sell the car
+    --     ['Zone'] = {
+    --         ['Shape'] = {
+    --             vector2(793.66473388672, -833.41107177734),
+    --             vector2(817.26861572266, -833.62554931641),
+    --             vector2(817.19519042969, -795.419921875),
+    --             vector2(793.76245117188, -795.46026611328),
+    --             vector2(788.22900390625, -795.50628662109),
+    --             vector2(788.12689208984, -833.18182373047)
+    --         },
+    --         ['minZ'] = 22.0,
+    --         ['maxZ'] = 29.0,
+    --         ['size'] = 3.25
+    --     },
+    --     ['Job'] = 'ottos', -- Name of job or none
+    --     ['showBlip'] = true, -- true or false
+    --     ['blipSprite'] = 226, -- Blip sprite
+    --     ['blipColor'] = 3, -- Blip color
+    --     ['ShopLabel'] = 'Ottos Dealership',
+    --     ['Categories'] = {
+    --         ['motorcycles'] = 'Motorcycles',
+    --     },
+    --     -- ['TestDriveTimeLimit'] = 0.5,
+    --     ['Location'] = vector3(801.11, -823.67, 26.34),
+    --     ['ReturnLocation'] = vector3(796.63, -818.23, 26.18),
+    --     ['VehicleSpawn'] = vector4(802.61, -820.4, 26.18, 273.6),
+    --     ['ShowroomVehicles'] = {
+    --         [1] = {
+    --             coords = vector4(797.14, -815.08, 25.18, 268.51),
+    --             defaultVehicle = 'zombieb',
+    --             chosenVehicle = 'zombieb',
+    --         },
+    --         [2] = {
+    --             coords = vector4(797.0, -811.77, 25.18, 268.55),
+    --             defaultVehicle = 'wolfsbane',
+    --             chosenVehicle = 'wolfsbane',
+    --         },
+    --         [3] = {
+    --             coords = vector4(796.8, -808.76, 25.25, 269.7),
+    --             defaultVehicle = 'vader',
+    --             chosenVehicle = 'vader',
+    --         },
+    --         [4] = {
+    --             coords = vector4(796.82, -805.37, 25.27, 272.24),
+    --             defaultVehicle = 'thrust',
+    --             chosenVehicle = 'thrust',
+    --         },
+    --         [5] = {
+    --             coords = vector4(808.95, -805.45, 25.23, 89.99),
+    --             defaultVehicle = 'sovereign',
+    --             chosenVehicle = 'sovereign',
+    --         },
+    --         [6] = {
+    --             coords = vector4(809.0, -808.7, 25.22, 93.7),
+    --             defaultVehicle = 'sanchez2',
+    --             chosenVehicle = 'sanchez2',
+    --         },
+    --         [7] = {
+    --             coords = vector4(808.72, -812.01, 25.18, 93.22),
+    --             defaultVehicle = 'sanctus',
+    --             chosenVehicle = 'sanctus',
+    --         },
+    --         [8] = {
+    --             coords = vector4(808.75, -814.89, 25.19, 93.72),
+    --             defaultVehicle = 'ruffian',
+    --             chosenVehicle = 'ruffian',
+    --         },
+    --     },
+    -- },
+    ['sanders'] = {
         ['Type'] = 'managed',  -- meaning a real player has to sell the car
         ['Zone'] = {
             ['Shape'] = {
-                vector2(793.66473388672, -833.41107177734),
-                vector2(817.26861572266, -833.62554931641),
-                vector2(817.19519042969, -795.419921875),
-                vector2(793.76245117188, -795.46026611328),
-                vector2(788.22900390625, -795.50628662109),
-                vector2(788.12689208984, -833.18182373047)
+                vector2(307.49411010742, -1146.7236328125),
+                vector2(267.31015014648, -1146.6380615234),
+                vector2(267.10397338867, -1172.3439941406),
+                vector2(307.55267333984, -1168.2810058594)
             },
-            ['minZ'] = 22.0,
-            ['maxZ'] = 29.0,
-            ['size'] = 3.25
+            ['minZ'] = 26.0,
+            ['maxZ'] = 32.0,
+            ['size'] = 2.25
         },
-        ['Job'] = 'ottos', -- Name of job or none
+        ['Job'] = 'sanders', -- Name of job or none
         ['showBlip'] = true, -- true or false
         ['blipSprite'] = 226, -- Blip sprite
         ['blipColor'] = 3, -- Blip color
-        ['ShopLabel'] = 'Ottos Dealership',
+        ['ShopLabel'] = 'Sanders Dealership',
         ['Categories'] = {
             ['motorcycles'] = 'Motorcycles',
         },
         -- ['TestDriveTimeLimit'] = 0.5,
-        ['Location'] = vector3(801.11, -823.67, 26.34),
-        ['ReturnLocation'] = vector3(796.63, -818.23, 26.18),
-        ['VehicleSpawn'] = vector4(802.61, -820.4, 26.18, 273.6),
+        ['Location'] = vector3(289.4, -1158.51, 29.47),
+        ['ReturnLocation'] = vector3(268.11, -1164.33, 29.18),
+        ['VehicleSpawn'] = vector4(274.07, -1159.46, 29.27, 105.58),
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(797.14, -815.08, 25.18, 268.51),
+                coords = vector4(290.68, -1150.45, 28.47, 265.63),
                 defaultVehicle = 'zombieb',
                 chosenVehicle = 'zombieb',
             },
             [2] = {
-                coords = vector4(797.0, -811.77, 25.18, 268.55),
+                coords = vector4(294.94, -1150.7, 28.47, 280.02),
                 defaultVehicle = 'wolfsbane',
                 chosenVehicle = 'wolfsbane',
             },
             [3] = {
-                coords = vector4(796.8, -808.76, 25.25, 269.7),
+                coords = vector4(299.44, -1150.84, 28.47, 265.16),
                 defaultVehicle = 'vader',
                 chosenVehicle = 'vader',
             },
             [4] = {
-                coords = vector4(796.82, -805.37, 25.27, 272.24),
+                coords = vector4(303.31, -1153.59, 28.47, 358.04),
                 defaultVehicle = 'thrust',
                 chosenVehicle = 'thrust',
             },
             [5] = {
-                coords = vector4(808.95, -805.45, 25.23, 89.99),
+                coords = vector4(303.26, -1157.73, 28.47, 358.51),
                 defaultVehicle = 'sovereign',
                 chosenVehicle = 'sovereign',
             },
             [6] = {
-                coords = vector4(809.0, -808.7, 25.22, 93.7),
+                coords = vector4(283.31, -1150.53, 28.47, 92.15),
                 defaultVehicle = 'sanchez2',
                 chosenVehicle = 'sanchez2',
-            },
-            [7] = {
-                coords = vector4(808.72, -812.01, 25.18, 93.22),
-                defaultVehicle = 'sanctus',
-                chosenVehicle = 'sanctus',
-            },
-            [8] = {
-                coords = vector4(808.75, -814.89, 25.19, 93.72),
-                defaultVehicle = 'ruffian',
-                chosenVehicle = 'ruffian',
             },
         },
     },
