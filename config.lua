@@ -73,6 +73,39 @@ Config.Shops = {
             },
         },
     },
+    ['island'] = {
+        ['Type'] = 'free-use', -- no player interaction is required to purchase a car
+        ['Zone'] = {
+            ['Shape'] = {--polygon that surrounds the shop
+            vector2(4493.0625, -4541.0434570312),
+            vector2(4499.9443359375, -4560.7700195312),
+            vector2(4511.490234375, -4556.5771484375),
+            vector2(4504.802734375, -4536.5141601562)
+            },
+            ['minZ'] = 1.0, -- min height of the shop zone
+            ['maxZ'] = 7.0, -- max height of the shop zone
+            ['size'] = 3.75 -- size of the vehicles zones
+        },
+        ['Job'] = 'none', -- Name of job or none
+        ['ShopLabel'] = 'Cairo Perico', -- Blip name
+        ['showBlip'] = true, -- true or false
+        ['blipSprite'] = 326, -- Blip sprite
+        ['blipColor'] = 3, -- Blip color
+        ['Categories'] = {-- Categories available to browse
+            ['islands'] = 'Cairo Perico',
+        },
+        -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        ['Location'] = vector3(4501.58, -4547.34, 4.03), -- Blip Location
+        ['ReturnLocation'] = vector3(4503.15, -4541.9, 4.04), -- Location to return vehicle, only enables if the vehicleshop has a job owned
+        ['VehicleSpawn'] = vector4(4502.07, -4537.15, 4.13, 305.69), -- Spawn location when vehicle is bought
+        ['ShowroomVehicles'] = {
+            [1] = {
+                coords = vector4(4500.94, -4545.97, 3.03, 23.55), -- where the vehicle will spawn on display
+                defaultVehicle = 'winky', -- Default display vehicle
+                chosenVehicle = 'winky', -- Same as default but is dynamically changed when swapping vehicles
+            },
+        },
+    },
     -- ['luxury'] = {
     --     ['Type'] = 'managed',  -- meaning a real player has to sell the car
     --     ['Zone'] = {
