@@ -505,34 +505,59 @@ Config.Shops = {
         ['VehicleSpawn'] = vector4(274.07, -1159.46, 29.27, 105.58),
         ['ShowroomVehicles'] = {
             [1] = {
-                coords = vector4(290.68, -1150.45, 28.47, 265.63),
+                coords = vector4(270.56, -1151.31, 28.59, 0.57),
                 defaultVehicle = 'zombieb',
                 chosenVehicle = 'zombieb',
             },
             [2] = {
-                coords = vector4(294.94, -1150.7, 28.47, 280.02),
+                coords = vector4(274.24, -1150.47, 28.59, 69.32),
                 defaultVehicle = 'wolfsbane',
                 chosenVehicle = 'wolfsbane',
             },
             [3] = {
-                coords = vector4(299.44, -1150.84, 28.47, 265.16),
+                coords = vector4(278.58, -1150.34, 28.59, 73.37),
                 defaultVehicle = 'vader',
                 chosenVehicle = 'vader',
             },
             [4] = {
-                coords = vector4(303.31, -1153.59, 28.47, 358.04),
+                coords = vector4(283.11, -1150.4, 28.59, 71.37),
                 defaultVehicle = 'thrust',
                 chosenVehicle = 'thrust',
             },
             [5] = {
-                coords = vector4(303.26, -1157.73, 28.47, 358.51),
+                coords = vector4(290.97, -1150.52, 28.59, 298.21),
                 defaultVehicle = 'sovereign',
                 chosenVehicle = 'sovereign',
             },
             [6] = {
-                coords = vector4(283.31, -1150.53, 28.47, 92.15),
+                coords = vector4(295.07, -1150.46, 28.59, 292.12),
                 defaultVehicle = 'sanchez2',
                 chosenVehicle = 'sanchez2',
+            },
+            [7] = {
+                coords = vector4(298.5, -1150.51, 28.59, 295.08),
+                defaultVehicle = 'sanctus',
+                chosenVehicle = 'sanctus',
+            },
+            [8] = {
+                coords = vector4(301.8, -1150.46, 28.59, 295.24),
+                defaultVehicle = 'ruffian',
+                chosenVehicle = 'ruffian',
+            },
+            [9] = {
+                coords = vector4(303.33, -1151.65, 28.59, 338.67),
+                defaultVehicle = 'bagger',
+                chosenVehicle = 'bagger',
+            },
+            [10] = {
+                coords = vector4(303.26, -1155.39, 28.59, 344.47),
+                defaultVehicle = 'avarus',
+                chosenVehicle = 'avarus',
+            },
+            [11] = {
+                coords = vector4(303.29, -1158.85, 28.59, 344.54),
+                defaultVehicle = 'double',
+                chosenVehicle = 'double',
             },
         },
     },
