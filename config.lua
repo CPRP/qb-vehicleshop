@@ -610,101 +610,101 @@ Config.Shops = {
             },
         },
     },
-    ['PILLBOXVS'] = {
-        ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
-        ['Zone'] = {
-            ['Shape'] = { --polygon that surrounds the shop
-                vector2(317.38739013672, -562.07629394531),
-                vector2(311.25842285156, -578.89056396484),
-                vector2(311.67098999023, -579.52728271484),
-                vector2(311.58505249023, -580.00805664062),
-                vector2(318.3215637207, -582.45941162109),
-                vector2(316.68591308594, -587.97698974609),
-                vector2(333.85189819336, -594.22119140625),
-                vector2(335.71618652344, -589.68133544922),
-                vector2(337.83508300781, -590.47406005859),
-                vector2(341.99743652344, -578.96179199219),
-                vector2(340.28457641602, -578.25170898438),
-                vector2(343.95080566406, -567.32470703125),
-                vector2(326.50817871094, -560.98291015625),
-                vector2(326.28707885742, -561.27447509766),
-                vector2(322.58203125, -559.62005615234)
-            },
-            ['minZ'] = 28.8,  -- min height of the shop zone
-            ['maxZ'] = 34.0,  -- max height of the shop zone
-            ['size'] = 3.25, -- size of the vehicles zones
-        },
-        ['Job'] = 'ambulance', -- Name of job or none
-        ['ShopLabel'] = 'Pillbox Vehicle Shop', -- Blip name
-        ['showBlip'] = false,  -- true or false
-        ['blipSprite'] = 326,  -- Blip sprite
-        ['blipColor'] = 3,  -- Blip color
-        ['Categories'] = { -- Categories available to browse
-            ['medical'] = 'Pillbox Hospital',
-        },
-        -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
-        ['Location'] = vector3(328.86, -576.66, 28.8), -- Blip Location
-        ['ReturnLocation'] = vector3(322.21, -566.11, 28.8), -- Location to return vehicle, only enables if the vehicleshop has a job owned
-        ['VehicleSpawn'] = vector4(333.0, -575.86, 28.8, 340.91), -- Spawn location when vehicle is bought
-        ['ShowroomVehicles'] = {
-            [1] = {
-                coords = vector4(327.4, -584.57, 27.8, 246.48), -- where the vehicle will spawn on display
-                defaultVehicle = 'ambulance', -- Default display vehicle
-                chosenVehicle = 'ambulance', -- Same as default but is dynamically changed when swapping vehicles
-            },
-        },
-    },
-    ['LSFDVS'] = {
-        ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
-        ['Zone'] = {
-            ['Shape'] = { --polygon that surrounds the shop
-                vector2(-654.83294677734, -106.79637908936),
-                vector2(-644.15814208984, -100.70204162598),
-                vector2(-640.17602539062, -96.939895629883),
-                vector2(-640.70764160156, -95.743156433105),
-                vector2(-637.91882324219, -93.2255859375),
-                vector2(-632.06658935547, -93.821189880371),
-                vector2(-631.99371337891, -95.004486083984),
-                vector2(-628.79742431641, -95.560668945312),
-                vector2(-629.3125, -99.937408447266),
-                vector2(-632.72399902344, -99.900733947754),
-                vector2(-633.16351318359, -102.82009887695),
-                vector2(-629.83630371094, -103.70213317871),
-                vector2(-630.39135742188, -108.07421875),
-                vector2(-633.40612792969, -107.72986602783),
-                vector2(-634.1533203125, -110.72512054443),
-                vector2(-630.83990478516, -111.62652587891),
-                vector2(-631.39916992188, -115.99180603027),
-                vector2(-634.39007568359, -115.619140625),
-                vector2(-635.0546875, -119.07189178467),
-                vector2(-638.59582519531, -118.96114349365),
-                vector2(-639.04846191406, -121.37124633789),
-                vector2(-644.34326171875, -124.97634887695)
-            },
-            ['minZ'] = 37.8,  -- min height of the shop zone
-            ['maxZ'] = 42.0,  -- max height of the shop zone
-            ['size'] = 3.25, -- size of the vehicles zones
-        },
-        ['Job'] = 'ambulance', -- Name of job or none
-        ['ShopLabel'] = 'LSFD Vehicle Shop', -- Blip name
-        ['showBlip'] = false,  -- true or false
-        ['blipSprite'] = 326,  -- Blip sprite
-        ['blipColor'] = 3,  -- Blip color
-        ['Categories'] = { -- Categories available to browse
-            ['medical'] = 'Los Santos Fire Department',
-        },
-        -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
-        ['Location'] = vector3(-641.69, -109.55, 37.96), -- Blip Location
-        ['ReturnLocation'] = vector3(-637.43, -98.78, 38.05), -- Location to return vehicle, only enables if the vehicleshop has a job owned
-        ['VehicleSpawn'] = vector4(-645.06, -118.8, 37.88, 31.56), -- Spawn location when vehicle is bought
-        ['ShowroomVehicles'] = {
-            [1] = {
-                coords = vector4(-640.13, -112.7, 36.97, 82.36), -- where the vehicle will spawn on display
-                defaultVehicle = 'fd13', -- Default display vehicle
-                chosenVehicle = 'fd13', -- Same as default but is dynamically changed when swapping vehicles
-            },
-        },
-    },
+    -- ['PILLBOXVS'] = {
+    --     ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
+    --     ['Zone'] = {
+    --         ['Shape'] = { --polygon that surrounds the shop
+    --             vector2(317.38739013672, -562.07629394531),
+    --             vector2(311.25842285156, -578.89056396484),
+    --             vector2(311.67098999023, -579.52728271484),
+    --             vector2(311.58505249023, -580.00805664062),
+    --             vector2(318.3215637207, -582.45941162109),
+    --             vector2(316.68591308594, -587.97698974609),
+    --             vector2(333.85189819336, -594.22119140625),
+    --             vector2(335.71618652344, -589.68133544922),
+    --             vector2(337.83508300781, -590.47406005859),
+    --             vector2(341.99743652344, -578.96179199219),
+    --             vector2(340.28457641602, -578.25170898438),
+    --             vector2(343.95080566406, -567.32470703125),
+    --             vector2(326.50817871094, -560.98291015625),
+    --             vector2(326.28707885742, -561.27447509766),
+    --             vector2(322.58203125, -559.62005615234)
+    --         },
+    --         ['minZ'] = 28.8,  -- min height of the shop zone
+    --         ['maxZ'] = 34.0,  -- max height of the shop zone
+    --         ['size'] = 3.25, -- size of the vehicles zones
+    --     },
+    --     ['Job'] = 'ambulance', -- Name of job or none
+    --     ['ShopLabel'] = 'Pillbox Vehicle Shop', -- Blip name
+    --     ['showBlip'] = false,  -- true or false
+    --     ['blipSprite'] = 326,  -- Blip sprite
+    --     ['blipColor'] = 3,  -- Blip color
+    --     ['Categories'] = { -- Categories available to browse
+    --         ['medical'] = 'Pillbox Hospital',
+    --     },
+    --     -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+    --     ['Location'] = vector3(328.86, -576.66, 28.8), -- Blip Location
+    --     ['ReturnLocation'] = vector3(322.21, -566.11, 28.8), -- Location to return vehicle, only enables if the vehicleshop has a job owned
+    --     ['VehicleSpawn'] = vector4(333.0, -575.86, 28.8, 340.91), -- Spawn location when vehicle is bought
+    --     ['ShowroomVehicles'] = {
+    --         [1] = {
+    --             coords = vector4(327.4, -584.57, 27.8, 246.48), -- where the vehicle will spawn on display
+    --             defaultVehicle = 'ambulance', -- Default display vehicle
+    --             chosenVehicle = 'ambulance', -- Same as default but is dynamically changed when swapping vehicles
+    --         },
+    --     },
+    -- },
+    -- ['LSFDVS'] = {
+    --     ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
+    --     ['Zone'] = {
+    --         ['Shape'] = { --polygon that surrounds the shop
+    --             vector2(-654.83294677734, -106.79637908936),
+    --             vector2(-644.15814208984, -100.70204162598),
+    --             vector2(-640.17602539062, -96.939895629883),
+    --             vector2(-640.70764160156, -95.743156433105),
+    --             vector2(-637.91882324219, -93.2255859375),
+    --             vector2(-632.06658935547, -93.821189880371),
+    --             vector2(-631.99371337891, -95.004486083984),
+    --             vector2(-628.79742431641, -95.560668945312),
+    --             vector2(-629.3125, -99.937408447266),
+    --             vector2(-632.72399902344, -99.900733947754),
+    --             vector2(-633.16351318359, -102.82009887695),
+    --             vector2(-629.83630371094, -103.70213317871),
+    --             vector2(-630.39135742188, -108.07421875),
+    --             vector2(-633.40612792969, -107.72986602783),
+    --             vector2(-634.1533203125, -110.72512054443),
+    --             vector2(-630.83990478516, -111.62652587891),
+    --             vector2(-631.39916992188, -115.99180603027),
+    --             vector2(-634.39007568359, -115.619140625),
+    --             vector2(-635.0546875, -119.07189178467),
+    --             vector2(-638.59582519531, -118.96114349365),
+    --             vector2(-639.04846191406, -121.37124633789),
+    --             vector2(-644.34326171875, -124.97634887695)
+    --         },
+    --         ['minZ'] = 37.8,  -- min height of the shop zone
+    --         ['maxZ'] = 42.0,  -- max height of the shop zone
+    --         ['size'] = 3.25, -- size of the vehicles zones
+    --     },
+    --     ['Job'] = 'ambulance', -- Name of job or none
+    --     ['ShopLabel'] = 'LSFD Vehicle Shop', -- Blip name
+    --     ['showBlip'] = false,  -- true or false
+    --     ['blipSprite'] = 326,  -- Blip sprite
+    --     ['blipColor'] = 3,  -- Blip color
+    --     ['Categories'] = { -- Categories available to browse
+    --         ['medical'] = 'Los Santos Fire Department',
+    --     },
+    --     -- ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+    --     ['Location'] = vector3(-641.69, -109.55, 37.96), -- Blip Location
+    --     ['ReturnLocation'] = vector3(-637.43, -98.78, 38.05), -- Location to return vehicle, only enables if the vehicleshop has a job owned
+    --     ['VehicleSpawn'] = vector4(-645.06, -118.8, 37.88, 31.56), -- Spawn location when vehicle is bought
+    --     ['ShowroomVehicles'] = {
+    --         [1] = {
+    --             coords = vector4(-640.13, -112.7, 36.97, 82.36), -- where the vehicle will spawn on display
+    --             defaultVehicle = 'fd13', -- Default display vehicle
+    --             chosenVehicle = 'fd13', -- Same as default but is dynamically changed when swapping vehicles
+    --         },
+    --     },
+    -- },
     ['gabzbcso'] = {
         ['Type'] = 'free-use',  -- no player interaction is required to purchase a car
         ['Zone'] = {
