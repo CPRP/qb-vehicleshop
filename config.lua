@@ -588,7 +588,7 @@ Config.Shops = {
             },
             ['minZ'] = 25.7,  -- min height of the shop zone
             ['maxZ'] = 31.0,  -- max height of the shop zone
-            ['size'] = 3.25, -- size of the vehicles zones
+            ['size'] = 3.75, -- size of the vehicles zones
         },
         ['Job'] = 'police', -- Name of job or none
         ['ShopLabel'] = 'LSPD Vehicle Shop', -- Blip name
