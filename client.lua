@@ -13,8 +13,7 @@ local insideShop, tempShop = nil, nil
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
     PlayerData = QBCore.Functions.GetPlayerData()
     local citizenid = PlayerData.citizenid
-    local gameTime = GetGameTimer()
-    TriggerServerEvent('qb-vehicleshop:server:addPlayer', citizenid, gameTime)
+    TriggerServerEvent('qb-vehicleshop:server:addPlayer', citizenid)
     TriggerServerEvent('qb-vehicleshop:server:checkFinance')
     TriggerServerEvent('qb-vehicleshop:server:checkRepo')
     if not Initialized then Init() end
@@ -482,6 +481,7 @@ end)
 -- end)
 
 RegisterNetEvent('qb-vehicleshop:client:vehCategories', function()
+	local catmenu = {}
     local categoryMenu = {
         {
             header = Lang:t('menus.goback_header'),
@@ -491,7 +491,18 @@ RegisterNetEvent('qb-vehicleshop:client:vehCategories', function()
             }
         }
     }
-    for k, v in pairs(Config.Shops[insideShop]['Categories']) do
+	for k, v in pairs(QBCore.Shared.Vehicles) do
+        if type(QBCore.Shared.Vehicles[k]["shop"]) == 'table' then
+            for _, shop in pairs(QBCore.Shared.Vehicles[k]["shop"]) do
+                if shop == insideShop then
+                    catmenu[v.category] = v.category
+                end
+            end
+        elseif QBCore.Shared.Vehicles[k]["shop"] == insideShop then
+                catmenu[v.category] = v.category
+        end
+    end
+    for k, v in pairs(catmenu) do
         categoryMenu[#categoryMenu + 1] = {
             header = v,
             icon = "fa-solid fa-circle",

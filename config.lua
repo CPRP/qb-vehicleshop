@@ -98,6 +98,7 @@ Config.Shops = {
         ['Location'] = vector3(4501.58, -4547.34, 4.03), -- Blip Location
         ['ReturnLocation'] = vector3(4503.15, -4541.9, 4.04), -- Location to return vehicle, only enables if the vehicleshop has a job owned
         ['VehicleSpawn'] = vector4(4502.07, -4537.15, 4.13, 305.69), -- Spawn location when vehicle is bought
+        -- ['TestDriveSpawn'] = vector4(-1232.81, -347.99, 37.33, 23.28), -- Spawn location for test drive
         ['ShowroomVehicles'] = {
             [1] = {
                 coords = vector4(4500.94, -4545.97, 3.03, 23.55), -- where the vehicle will spawn on display
@@ -827,7 +828,6 @@ Config.Shops = {
             },
         },
     },
-}
 --     ['air'] = {
 --         ['Type'] = 'free-use', -- no player interaction is required to purchase a vehicle
 --         ['Zone'] = {
@@ -846,10 +846,6 @@ Config.Shops = {
 --         ['showBlip'] = true, -- true or false
 --         ['blipSprite'] = 251, -- Blip sprite
 --         ['blipColor'] = 3, -- Blip color
---         ['Categories'] = {-- Categories available to browse
---             ['helicopters'] = 'Helicopters',
---             ['planes'] = 'Planes'
---         },
 --         ['TestDriveTimeLimit'] = 1.5, -- Time in minutes until the vehicle gets deleted
 --         ['Location'] = vector3(-1652.76, -3143.4, 13.99), -- Blip Location
 --         ['ReturnLocation'] = vector3(-1628.44, -3104.7, 13.94), -- Location to return vehicle, only enables if the vehicleshop has a job owned

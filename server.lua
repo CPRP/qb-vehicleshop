@@ -4,8 +4,8 @@ local financetimer = {}
 
 -- Handlers
 -- Store game time for player when they load
-RegisterNetEvent('qb-vehicleshop:server:addPlayer', function(citizenid, gameTime)
-    financetimer[citizenid] = gameTime
+RegisterNetEvent('qb-vehicleshop:server:addPlayer', function(citizenid)
+    financetimer[citizenid] = os.time()
 end)
 
 -- Check's Repo (added 6/25 for repo sent to depot)
@@ -20,9 +20,9 @@ RegisterNetEvent('qb-vehicleshop:server:removePlayer', function(citizenid)
         local financetime = MySQL.query.await('SELECT * FROM player_vehicles WHERE citizenid = ?', {citizenid})
         for _, v in pairs(financetime) do
             if v.balance >= 1 then
-                local newTime = math.floor(v.financetime - (((GetGameTimer() - playTime) / 1000) / 60))
+                local newTime = (v.financetime-((os.time()-playTime)/60))
                 if newTime < 0 then newTime = 0 end
-                MySQL.update('UPDATE player_vehicles SET financetime = ? WHERE plate = ?', {newTime, v.plate})
+                MySQL.update('UPDATE player_vehicles SET financetime = ? WHERE plate = ?', {math.ceil(newTime), v.plate})
             end
         end
     end
@@ -44,9 +44,9 @@ AddEventHandler('playerDropped', function()
             for _, v in pairs(vehicles) do
                 local playTime = financetimer[v.citizenid]
                 if v.balance >= 1 and playTime then
-                    local newTime = math.floor(v.financetime - (((GetGameTimer() - playTime) / 1000) / 60))
+                    local newTime = (v.financetime-((os.time()-playTime)/60))
                     if newTime < 0 then newTime = 0 end
-                    MySQL.update('UPDATE player_vehicles SET financetime = ? WHERE plate = ?', {newTime, v.plate})
+                    MySQL.update('UPDATE player_vehicles SET financetime = ? WHERE plate = ?', {math.ceil(newTime), v.plate})
                 end
             end
             if vehicles[1] and financetimer[vehicles[1].citizenid] then financetimer[vehicles[1].citizenid] = nil end
