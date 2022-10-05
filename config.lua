@@ -560,6 +560,11 @@ Config.Shops = {
                 defaultVehicle = 'double',
                 chosenVehicle = 'double',
             },
+            [12] = {
+                coords = vector4(297.57, -1160.48, 29.29, 235.08),
+                defaultVehicle = 'slingshot',
+                chosenVehicle = 'slingshot',
+            },
         },
     },
     -- ['LSPDVS'] = {
