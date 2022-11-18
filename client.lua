@@ -142,10 +142,11 @@ end
 -- local function startTestDriveTimer(testDriveTime, prevCoords)
 --     local gameTimer = GetGameTimer()
 --     CreateThread(function()
+-- 	Wait(2000) -- Avoids the condition to run before entering vehicle
 --         while inTestDrive do
 --             if GetGameTimer() < gameTimer + tonumber(1000 * testDriveTime) then
 --                 local secondsLeft = GetGameTimer() - gameTimer
---                 if secondsLeft >= tonumber(1000 * testDriveTime) - 20 then
+--                 if secondsLeft >= tonumber(1000 * testDriveTime) - 20 or GetPedInVehicleSeat(NetToVeh(testDriveVeh), -1) ~= PlayerPedId() then
 --                     TriggerServerEvent('qb-vehicleshop:server:deleteVehicle', testDriveVeh)
 --                     testDriveVeh = 0
 --                     inTestDrive = false
