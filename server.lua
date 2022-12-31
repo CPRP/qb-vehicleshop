@@ -153,9 +153,11 @@ RegisterNetEvent('qb-vehicleshop:server:financePayment', function(paymentAmount,
         if player and paymentAmount >= minPayment then
             if cash >= paymentAmount then
                 player.Functions.RemoveMoney('cash', paymentAmount)
+                exports['ap-government']:chargeCityTax(source, "Vehicle", paymentAmount, cash) -- AP-Government
                 MySQL.update('UPDATE player_vehicles SET balance = ?, paymentamount = ?, paymentsleft = ?, financetime = ? WHERE plate = ?', {newBalance, newPayment, newPaymentsLeft, timer, plate})
             elseif bank >= paymentAmount then
                 player.Functions.RemoveMoney('bank', paymentAmount)
+                exports['ap-government']:chargeCityTax(source, "Vehicle", paymentAmount, bank) -- AP-Government
                 MySQL.update('UPDATE player_vehicles SET balance = ?, paymentamount = ?, paymentsleft = ?, financetime = ? WHERE plate = ?', {newBalance, newPayment, newPaymentsLeft, timer, plate})
             else
                 TriggerClientEvent('QBCore:Notify', src, Lang:t('error.notenoughmoney'), 'error')
