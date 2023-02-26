@@ -20,7 +20,7 @@ Config.Shops = {
             vector2(-20.60080909729, -1117.9290771484),
             vector2(-8.9895477294922, -1085.5925292969)
             },
-            ['minZ'] = 22.0, -- min height of the shop zone
+            ['minZ'] = 20.0, -- min height of the shop zone
             ['maxZ'] = 30.0, -- max height of the shop zone
             ['size'] = 3.75 -- size of the vehicles zones
         },
