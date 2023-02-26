@@ -469,28 +469,31 @@ end)
 --     if not plate then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.vehinfo'), 'error') end
 --     local player = QBCore.Functions.GetPlayer(src)
 --     local target = QBCore.Functions.GetPlayer(buyerId)
---     local ownerCitizenID = MySQL.scalar.await('SELECT citizenid FROM player_vehicles WHERE plate = ?', {plate})
---     if ownerCitizenID ~= player.PlayerData.citizenid then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.notown'), 'error') end
+--     local row = MySQL.single.await('SELECT * FROM player_vehicles WHERE plate = ?', {plate})
+--     if Config.PreventFinanceSelling then
+--         if row.balance > 0 then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.financed'), 'error') end
+--     end
+--     if row.citizenid ~= player.PlayerData.citizenid then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.notown'), 'error') end
 --     if #(GetEntityCoords(ped) - GetEntityCoords(targetPed)) > 5.0 then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.playertoofar'), 'error') end
 --     local targetcid = target.PlayerData.citizenid
 --     local targetlicense = QBCore.Functions.GetIdentifier(target.PlayerData.source, 'license')
 --     if not target then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.buyerinfo'), 'error') end
 --     if not sellAmount then
---         MySQL.update('UPDATE player_vehicles SET citizenid = ? AND license = ? WHERE plate = ?', {targetcid, targetlicense, plate})
+--         MySQL.update('UPDATE player_vehicles SET citizenid = ?, license = ? WHERE plate = ?', {targetcid, targetlicense, plate})
 --         TriggerClientEvent('QBCore:Notify', src, Lang:t('success.gifted'), 'success')
 --         TriggerClientEvent('vehiclekeys:client:SetOwner', buyerId, plate)
 --         TriggerClientEvent('QBCore:Notify', buyerId, Lang:t('success.received_gift'), 'success')
 --         return
 --     end
 --     if target.Functions.GetMoney('cash') > sellAmount then
---         MySQL.update('UPDATE player_vehicles SET citizenid = ? AND license = ? WHERE plate = ?', {targetcid, targetlicense, plate})
+--         MySQL.update('UPDATE player_vehicles SET citizenid = ?, license = ? WHERE plate = ?', {targetcid, targetlicense, plate})
 --         player.Functions.AddMoney('cash', sellAmount)
 --         target.Functions.RemoveMoney('cash', sellAmount)
 --         TriggerClientEvent('QBCore:Notify', src, Lang:t('success.soldfor') .. comma_value(sellAmount), 'success')
 --         TriggerClientEvent('vehiclekeys:client:SetOwner', buyerId, plate)
 --         TriggerClientEvent('QBCore:Notify', buyerId, Lang:t('success.boughtfor') .. comma_value(sellAmount), 'success')
 --     elseif target.Functions.GetMoney('bank') > sellAmount then
---         MySQL.update('UPDATE player_vehicles SET citizenid = ? AND license = ? WHERE plate = ?', {targetcid, targetlicense, plate})
+--         MySQL.update('UPDATE player_vehicles SET citizenid = ?, license = ? WHERE plate = ?', {targetcid, targetlicense, plate})
 --         player.Functions.AddMoney('bank', sellAmount)
 --         target.Functions.RemoveMoney('bank', sellAmount)
 --         TriggerClientEvent('QBCore:Notify', src, Lang:t('success.soldfor') .. comma_value(sellAmount), 'success')
@@ -501,61 +504,11 @@ end)
 --     end
 -- end)
 
--- Transfer vehicle to player in passenger seat
-QBCore.Commands.Add('transfervehicle', Lang:t('general.command_transfervehicle'), {{name = 'ID', help = Lang:t('general.command_transfervehicle_help')}, {name = 'amount', help = Lang:t('general.command_transfervehicle_amount')}}, false, function(source, args)
-    local src = source
-    local buyerId = tonumber(args[1])
-    local sellAmount = tonumber(args[2])
-    if buyerId == 0 then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.Invalid_ID'), 'error') end
-    local ped = GetPlayerPed(src)
-    local targetPed = GetPlayerPed(buyerId)
-    if targetPed == 0 then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.buyerinfo'), 'error') end
-    local vehicle = GetVehiclePedIsIn(ped, false)
-    if vehicle == 0 then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.notinveh'), 'error') end
-    local plate = QBCore.Shared.Trim(GetVehicleNumberPlateText(vehicle))
-    if not plate then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.vehinfo'), 'error') end
-    local player = QBCore.Functions.GetPlayer(src)
-    local target = QBCore.Functions.GetPlayer(buyerId)
-    local row = MySQL.single.await('SELECT * FROM player_vehicles WHERE plate = ?', {plate})
-    if Config.PreventFinanceSelling then
-        if row.balance > 0 then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.financed'), 'error') end
-    end
-    if row.citizenid ~= player.PlayerData.citizenid then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.notown'), 'error') end
-    if #(GetEntityCoords(ped) - GetEntityCoords(targetPed)) > 5.0 then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.playertoofar'), 'error') end
-    local targetcid = target.PlayerData.citizenid
-    local targetlicense = QBCore.Functions.GetIdentifier(target.PlayerData.source, 'license')
-    if not target then return TriggerClientEvent('QBCore:Notify', src, Lang:t('error.buyerinfo'), 'error') end
-    if not sellAmount then
-        MySQL.update('UPDATE player_vehicles SET citizenid = ?, license = ? WHERE plate = ?', {targetcid, targetlicense, plate})
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('success.gifted'), 'success')
-        TriggerClientEvent('vehiclekeys:client:SetOwner', buyerId, plate)
-        TriggerClientEvent('QBCore:Notify', buyerId, Lang:t('success.received_gift'), 'success')
-        return
-    end
-    if target.Functions.GetMoney('cash') > sellAmount then
-        MySQL.update('UPDATE player_vehicles SET citizenid = ?, license = ? WHERE plate = ?', {targetcid, targetlicense, plate})
-        player.Functions.AddMoney('cash', sellAmount)
-        target.Functions.RemoveMoney('cash', sellAmount)
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('success.soldfor') .. comma_value(sellAmount), 'success')
-        TriggerClientEvent('vehiclekeys:client:SetOwner', buyerId, plate)
-        TriggerClientEvent('QBCore:Notify', buyerId, Lang:t('success.boughtfor') .. comma_value(sellAmount), 'success')
-    elseif target.Functions.GetMoney('bank') > sellAmount then
-        MySQL.update('UPDATE player_vehicles SET citizenid = ?, license = ? WHERE plate = ?', {targetcid, targetlicense, plate})
-        player.Functions.AddMoney('bank', sellAmount)
-        target.Functions.RemoveMoney('bank', sellAmount)
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('success.soldfor') .. comma_value(sellAmount), 'success')
-        TriggerClientEvent('vehiclekeys:client:SetOwner', buyerId, plate)
-        TriggerClientEvent('QBCore:Notify', buyerId, Lang:t('success.boughtfor') .. comma_value(sellAmount), 'success')
-    else
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.buyertoopoor'), 'error')
-    end
-end)
-
--- Transfer vehicle to player in passenger seat
-QBCore.Commands.Add('transferVehicle', 'Gift or sell your vehicle', {{name = 'ID', help = 'ID of buyer'}, {name = 'amount', help = 'Sell amount'}}, false, function(source, args)
-    if args[1] ~= nil and args[2] ~= nil then
-        TriggerClientEvent('qb-vehicleshop:client:transferVehicle', source, args[1], args[2])
-    else
-        TriggerClientEvent('QBCore:Notify', source, 'Check who you\'re selling to or the amount to sell for.', 'error')
-    end
-end)
+-- -- Transfer vehicle to player in passenger seat
+-- QBCore.Commands.Add('transferVehicle', 'Gift or sell your vehicle', {{name = 'ID', help = 'ID of buyer'}, {name = 'amount', help = 'Sell amount'}}, false, function(source, args)
+--     if args[1] ~= nil and args[2] ~= nil then
+--         TriggerClientEvent('qb-vehicleshop:client:transferVehicle', source, args[1], args[2])
+--     else
+--         TriggerClientEvent('QBCore:Notify', source, 'Check who you\'re selling to or the amount to sell for.', 'error')
+--     end
+-- end)
