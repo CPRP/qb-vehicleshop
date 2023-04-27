@@ -329,8 +329,8 @@ Config.Shops = {
             },
             [4] = {
                 coords = vector4(2718.14, 3459.56, 55.48, 0.06), --CORRECT
-                defaultVehicle = 'charge4',
-                chosenVehicle = 'charge4',
+                defaultVehicle = 'silvias15',
+                chosenVehicle = 'silvias15',
             },
             [5] = {
                 coords = vector4(2712.06, 3462.69, 55.48, 2.76), --CORRECT
@@ -339,13 +339,13 @@ Config.Shops = {
             },
             [6] = {
                 coords = vector4(2706.14, 3465.5, 55.48, 2.98), --CORRECT
-                defaultVehicle = 'ffrx7',
-                chosenVehicle = 'ffrx7',
+                defaultVehicle = 'chrisv',
+                chosenVehicle = 'chrisv',
             },
             [7] = {
                 coords = vector4(2700.06, 3467.88, 55.48, 3.16), --CORRECT
-                defaultVehicle = 'fnfcivic',
-                chosenVehicle = 'fnfcivic',
+                defaultVehicle = 'lc500',
+                chosenVehicle = 'lc500',
             },
             [8] = {
                 coords = vector4(2694.0, 3471.07, 55.48, 6.57), --CORRECT
@@ -404,8 +404,8 @@ Config.Shops = {
             },
             [19] = {
                 coords = vector4(2723.97, 3476.05, 55.48, 179.94), --CORRECT
-                defaultVehicle = 'jagtwr',
-                chosenVehicle = 'jagtwr',
+                defaultVehicle = 'g500',
+                chosenVehicle = 'g500',
             },
             [20] = {
                 coords = vector4(2730.18, 3473.73, 55.48, 182.8), --CORRECT
@@ -484,8 +484,8 @@ Config.Shops = {
             },
             [35] = {
                 coords = vector4(2713.06, 3519.12, 55.48, 183.59), --CORRECT
-                defaultVehicle = 'g500',
-                chosenVehicle = 'g500',
+                defaultVehicle = '911sc',
+                chosenVehicle = '911sc',
             },
             [36] = {
                 coords = vector4(2719.16, 3516.06, 55.48, 182.26), --CORRECT
@@ -514,8 +514,8 @@ Config.Shops = {
             },
             [41] = {
                 coords = vector4(2755.77, 3502.4, 55.48, 180.38), --CORRECT
-                defaultVehicle = 'gle63c',
-                chosenVehicle = 'gle63c',
+                defaultVehicle = 'corvettec5z06',
+                chosenVehicle = 'corvettec5z06',
             },
             [42] = {
                 coords = vector4(2731.36, 3512.77, 55.48, 178.88), --CORRECT
