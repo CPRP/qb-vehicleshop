@@ -459,8 +459,8 @@ Config.Shops = {
             },
             [30] = {
                 coords = vector4(2689.19, 3511.62, 55.48, 1.07), --CORRECT
-                defaultVehicle = '77monte',
-                chosenVehicle = '77monte',
+                defaultVehicle = 'missile',
+                chosenVehicle = 'missile',
             },
             [31] = {
                 coords = vector4(2689.0, 3528.26, 55.48, 175.29), --CORRECT
@@ -469,8 +469,8 @@ Config.Shops = {
             },
             [32] = {
                 coords = vector4(2695.16, 3526.14, 55.48, 182.06), --CORRECT
-                defaultVehicle = 'H6',
-                chosenVehicle = 'H6',
+                defaultVehicle = 'h6',
+                chosenVehicle = 'h6',
             },
             [33] = {
                 coords = vector4(2701.08, 3523.79, 55.48, 186.99), --CORRECT
@@ -521,7 +521,7 @@ Config.Shops = {
                 coords = vector4(2731.36, 3512.77, 55.48, 178.88), --CORRECT
                 defaultVehicle = 'dbxultimate',
                 chosenVehicle = 'dbxultimate',
-            }, 
+            },
         },
     },
     ['sanders'] = {
