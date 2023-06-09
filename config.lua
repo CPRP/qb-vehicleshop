@@ -329,148 +329,148 @@ Config.Shops = {
             },
             [4] = {
                 coords = vector4(2718.14, 3459.56, 55.48, 0.06), --CORRECT
-                defaultVehicle = 'silvias15',
-                chosenVehicle = 'silvias15',
-            },
-            [5] = {
-                coords = vector4(2712.06, 3462.69, 55.48, 2.76), --CORRECT
                 defaultVehicle = 'mst',
                 chosenVehicle = 'mst',
             },
-            [6] = {
-                coords = vector4(2706.14, 3465.5, 55.48, 2.98), --CORRECT
-                defaultVehicle = 'chrisv',
-                chosenVehicle = 'chrisv',
-            },
-            [7] = {
-                coords = vector4(2700.06, 3467.88, 55.48, 3.16), --CORRECT
-                defaultVehicle = 'lc500',
-                chosenVehicle = 'lc500',
-            },
-            [8] = {
-                coords = vector4(2694.0, 3471.07, 55.48, 6.57), --CORRECT
-                defaultVehicle = 'm3e46',
-                chosenVehicle = 'm3e46',
-            },
-            [9] = {
-                coords = vector4(2687.93, 3473.38, 55.48, 2.29), --CORRECT
+            [5] = {
+                coords = vector4(2712.06, 3462.69, 55.48, 2.76), --CORRECT
                 defaultVehicle = 'btr04',
                 chosenVehicle = 'btr04',
             },
-            [10] = {
-                coords = vector4(2681.89, 3475.23, 55.48, 3.15), --CORRECT
-                defaultVehicle = 'ateamvan',
-                chosenVehicle = 'ateamvan',
+            [6] = {
+                coords = vector4(2706.14, 3465.5, 55.48, 2.98), --CORRECT
+                defaultVehicle = 'giulia_2021',
+                chosenVehicle = 'giulia_2021',
             },
-            [11] = {
-                coords = vector4(2675.93, 3477.21, 55.48, 355.18), --CORRECT
+            [7] = {
+                coords = vector4(2700.06, 3467.88, 55.48, 3.16), --CORRECT
                 defaultVehicle = 'patty',
                 chosenVehicle = 'patty',
             },
-            [12] = {
-                coords = vector4(2681.73, 3493.68, 55.48, 178.49), --CORRECT
-                defaultVehicle = 'cozycoupe',
-                chosenVehicle = 'cozycoupe',
-            },
-            [13] = {
-                coords = vector4(2687.82, 3491.59, 55.48, 179.45), --CORRECT
-                defaultVehicle = 'lambokart',
-                chosenVehicle = 'lambokart',
-            },
-            [14] = {
-                coords = vector4(2693.86, 3488.86, 55.48, 178.79), --CORRECT
-                defaultVehicle = 'remower',
-                chosenVehicle = 'remower',
-            },
-            [15] = {
-                coords = vector4(2699.93, 3486.23, 55.48, 178.5), --CORRECT
+            [8] = {
+                coords = vector4(2694.0, 3471.07, 55.48, 6.57), --CORRECT
                 defaultVehicle = 'lsen',
                 chosenVehicle = 'lsen',
             },
-            [16] = {
-                coords = vector4(2706.06, 3483.76, 55.48, 182.53), --CORRECT
+            [9] = {
+                coords = vector4(2687.93, 3473.38, 55.48, 2.29), --CORRECT
+                defaultVehicle = 'remower',
+                chosenVehicle = 'remower',
+            },
+            [10] = {
+                coords = vector4(2681.89, 3475.23, 55.48, 3.15), --CORRECT
+                defaultVehicle = 'lambokart',
+                chosenVehicle = 'lambokart',
+            },
+            [11] = {
+                coords = vector4(2675.93, 3477.21, 55.48, 355.18), --CORRECT
+                defaultVehicle = 'cozycoupe',
+                chosenVehicle = 'cozycoupe',
+            },
+            [12] = {
+                coords = vector4(2681.73, 3493.68, 55.48, 178.49), --CORRECT
+                defaultVehicle = 'lc500',
+                chosenVehicle = 'lc500',
+            },
+            [13] = {
+                coords = vector4(2687.82, 3491.59, 55.48, 179.45), --CORRECT
+                defaultVehicle = 'chrisv',
+                chosenVehicle = 'chrisv',
+            },
+            [14] = {
+                coords = vector4(2693.86, 3488.86, 55.48, 178.79), --CORRECT
+                defaultVehicle = 'silvias15',
+                chosenVehicle = 'silvias15',
+            },
+            [15] = {
+                coords = vector4(2699.93, 3486.23, 55.48, 178.5), --CORRECT
                 defaultVehicle = 'ocnetrongt',
                 chosenVehicle = 'ocnetrongt',
             },
-            [17] = {
-                coords = vector4(2711.93, 3481.35, 55.48, 186.69), --CORRECT
+            [16] = {
+                coords = vector4(2706.06, 3483.76, 55.48, 182.53), --CORRECT
                 defaultVehicle = 'MVISIONGT',
                 chosenVehicle = 'MVISIONGT',
             },
-            [18] = {
-                coords = vector4(2718.2, 3478.95, 55.48, 172.74), --CORRECT
+            [17] = {
+                coords = vector4(2711.93, 3481.35, 55.48, 186.69), --CORRECT
                 defaultVehicle = 'x3mache21',
                 chosenVehicle = 'x3mache21',
             },
+            [18] = {
+                coords = vector4(2718.2, 3478.95, 55.48, 172.74), --CORRECT
+                defaultVehicle = 'corvettec5z06',
+                chosenVehicle = 'corvettec5z06',
+            },
             [19] = {
                 coords = vector4(2723.97, 3476.05, 55.48, 179.94), --CORRECT
-                defaultVehicle = 'g500',
-                chosenVehicle = 'g500',
-            },
-            [20] = {
-                coords = vector4(2730.18, 3473.73, 55.48, 182.8), --CORRECT
                 defaultVehicle = 'f1',
                 chosenVehicle = 'f1',
             },
-            [21] = {
-                coords = vector4(2736.16, 3471.36, 55.48, 178.23), --CORRECT
+            [20] = {
+                coords = vector4(2730.18, 3473.73, 55.48, 182.8), --CORRECT
                 defaultVehicle = 'kev',
                 chosenVehicle = 'kev',
             },
-            [22] = {
-                coords = vector4(2737.47, 3491.54, 55.48, 356.5), --CORRECT
+            [21] = {
+                coords = vector4(2736.16, 3471.36, 55.48, 178.23), --CORRECT
                 defaultVehicle = 'nissanr33tbk',
                 chosenVehicle = 'nissanr33tbk',
             },
-            [23] = {
-                coords = vector4(2731.41, 3493.84, 55.48, 358.85), --CORRECT
+            [22] = {
+                coords = vector4(2737.47, 3491.54, 55.48, 356.5), --CORRECT
                 defaultVehicle = 'clkgtr',
                 chosenVehicle = 'clkgtr',
             },
-            [24] = {
-                coords = vector4(2725.42, 3496.97, 55.48, 5.35), --CORRECT
+            [23] = {
+                coords = vector4(2731.41, 3493.84, 55.48, 358.85), --CORRECT
                 defaultVehicle = 'f1mcl',
                 chosenVehicle = 'f1mcl',
             },
+            [24] = {
+                coords = vector4(2725.42, 3496.97, 55.48, 5.35), --CORRECT
+                defaultVehicle = 'Victor',
+                chosenVehicle = 'Victor',
+            },
             [25] = {
                 coords = vector4(2719.3, 3499.59, 55.48, 359.1), --CORRECT
-                defaultVehicle = 'a80',
-                chosenVehicle = 'a80',
-            },
-            [26] = {
-                coords = vector4(2713.47, 3502.09, 55.48, 5.5), --CORRECT
                 defaultVehicle = 'm3e30',
                 chosenVehicle = 'm3e30',
             },
-            [27] = {
-                coords = vector4(2707.37, 3504.38, 55.48, 1.1), --CORRECT
+            [26] = {
+                coords = vector4(2713.47, 3502.09, 55.48, 5.5), --CORRECT
                 defaultVehicle = 'gsxb',
                 chosenVehicle = 'gsxb',
             },
-            [28] = {
-                coords = vector4(2701.27, 3506.62, 55.48, 358.66), --CORRECT
+            [27] = {
+                coords = vector4(2707.37, 3504.38, 55.48, 1.1), --CORRECT
                 defaultVehicle = 'eleanor',
                 chosenVehicle = 'eleanor',
             },
-            [29] = {
-                coords = vector4(2695.21, 3509.26, 55.48, 2.64), --CORRECT
+            [28] = {
+                coords = vector4(2701.27, 3506.62, 55.48, 358.66), --CORRECT
                 defaultVehicle = 'caprice89',
                 chosenVehicle = 'caprice89',
             },
-            [30] = {
-                coords = vector4(2689.19, 3511.62, 55.48, 1.07), --CORRECT
+            [29] = {
+                coords = vector4(2695.21, 3509.26, 55.48, 2.64), --CORRECT
                 defaultVehicle = 'missile',
                 chosenVehicle = 'missile',
             },
+            [30] = {
+                coords = vector4(2689.19, 3511.62, 55.48, 1.07), --CORRECT
+                defaultVehicle = '911sc',
+                chosenVehicle = '911sc',
+            },
             [31] = {
                 coords = vector4(2689.0, 3528.26, 55.48, 175.29), --CORRECT
-                defaultVehicle = 'monster',
-                chosenVehicle = 'monster',
+                defaultVehicle = 'h6',
+                chosenVehicle = 'h6',
             },
             [32] = {
                 coords = vector4(2695.16, 3526.14, 55.48, 182.06), --CORRECT
-                defaultVehicle = 'h6',
-                chosenVehicle = 'h6',
+                defaultVehicle = 'dwrangler',
+                chosenVehicle = 'dwrangler',
             },
             [33] = {
                 coords = vector4(2701.08, 3523.79, 55.48, 186.99), --CORRECT
@@ -484,8 +484,8 @@ Config.Shops = {
             },
             [35] = {
                 coords = vector4(2713.06, 3519.12, 55.48, 183.59), --CORRECT
-                defaultVehicle = '911sc',
-                chosenVehicle = '911sc',
+                defaultVehicle = 'monster',
+                chosenVehicle = 'monster',
             },
             [36] = {
                 coords = vector4(2719.16, 3516.06, 55.48, 182.26), --CORRECT
@@ -514,8 +514,8 @@ Config.Shops = {
             },
             [41] = {
                 coords = vector4(2755.77, 3502.4, 55.48, 180.38), --CORRECT
-                defaultVehicle = 'corvettec5z06',
-                chosenVehicle = 'corvettec5z06',
+                defaultVehicle = 'g500',
+                chosenVehicle = 'g500',
             },
             [42] = {
                 coords = vector4(2731.36, 3512.77, 55.48, 178.88), --CORRECT
